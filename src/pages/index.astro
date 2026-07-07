@@ -1,0 +1,251 @@
+---
+import { educationLevels, entries, tags } from "../lib/catalog";
+import "../styles/global.css";
+
+const totalStars = entries.reduce((sum, entry) => sum + entry.stars, 0);
+const totalRepos = entries.length;
+const lastUpdated = entries
+  .map((entry) => entry.lastPushedAt || entry.submittedAt)
+  .sort((a, b) => b.localeCompare(a))[0];
+
+function formatDate(value: string) {
+  if (!value) return "尚無資料";
+  return new Intl.DateTimeFormat("zh-Hant", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date(value));
+}
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="為教育工作者整理的 GitHub 教育工具推薦網站，讀取 list.txt 的開源專案並整理適用教育階段、教學用途、注意事項與 GitHub stars。"
+    />
+    <title>教育工具 GitHub 推薦</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div>
+          <p class="eyebrow">GitHub Education Tools</p>
+          <h1>教育工具推薦</h1>
+          <p class="intro">
+            從 GitHub 專案 README 與公開 metadata 整理適合教育工作者評估的工具，重點呈現適用群體、教學情境、導入注意事項與 Stars 參考。
+          </p>
+        </div>
+        <div class="stats" aria-label="網站統計">
+          <div>
+            <strong>{totalRepos}</strong>
+            <span>工具</span>
+          </div>
+          <div>
+            <strong>{educationLevels.length}</strong>
+            <span>教育階段</span>
+          </div>
+          <div>
+            <strong>{totalStars}</strong>
+            <span>Stars</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="toolbar" aria-label="推薦清單控制項">
+        <label class="search">
+          <span>搜尋</span>
+          <input id="search" type="search" placeholder="工具、用途、階段、標籤" autocomplete="off" />
+        </label>
+        <label>
+          <span>教育階段</span>
+          <select id="level">
+            <option value="">全部</option>
+            {educationLevels.map((level) => <option value={level}>{level}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>標籤</span>
+          <select id="tag">
+            <option value="">全部</option>
+            {tags.map((tag) => <option value={tag}>{tag}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>排序</span>
+          <select id="sort">
+            <option value="stars">Stars</option>
+            <option value="name">名稱</option>
+            <option value="updated">最近更新</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="catalog" id="catalog" aria-live="polite">
+        {
+          entries.length === 0 ? (
+            <div class="empty">
+              <h2>目前尚未收錄工具</h2>
+              <p>在 list.txt 新增 GitHub repo 連結後，執行 npm run import:list 產生推薦資料。</p>
+            </div>
+          ) : (
+            entries.map((entry) => (
+              <article
+                class="card"
+                data-name={entry.name.toLowerCase()}
+                data-description={`${entry.description} ${entry.educatorSummary}`.toLowerCase()}
+                data-search={`${entry.name} ${entry.description} ${entry.educatorSummary} ${entry.educationLevels.join(" ")} ${entry.useCases.join(" ")} ${entry.cautions.join(" ")} ${entry.install} ${entry.tags.join(" ")} ${entry.language} ${entry.authorGitHub}`.toLowerCase()}
+                data-author={entry.authorName.toLowerCase()}
+                data-github={entry.authorGitHub.toLowerCase()}
+                data-language={entry.language}
+                data-levels={entry.educationLevels.join(",")}
+                data-tags={entry.tags.join(",")}
+                data-use-cases={entry.useCases.join(" ").toLowerCase()}
+                data-stars={entry.stars}
+                data-updated={entry.lastPushedAt || entry.submittedAt}
+              >
+                <div class="cardTop">
+                  <div class="identity">
+                    {entry.avatarUrl ? <img src={entry.avatarUrl} alt="" loading="lazy" /> : <span class="avatarFallback" />}
+                    <div>
+                      <h2>{entry.name}</h2>
+                      <a href={`https://github.com/${entry.authorGitHub}`} target="_blank" rel="noreferrer">
+                        @{entry.authorGitHub}
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rating" title="GitHub Stars">
+                    <span aria-hidden="true">★</span>
+                    <strong>{entry.stars}</strong>
+                  </div>
+                </div>
+
+                <p class="description">{entry.description}</p>
+                <p class="summary">{entry.educatorSummary}</p>
+
+                <div class="section">
+                  <h3>適用群體</h3>
+                  <div class="chips">
+                    {entry.educationLevels.map((level) => <span>{level}</span>)}
+                  </div>
+                </div>
+
+                <div class="section">
+                  <h3>教學用途</h3>
+                  <ul>
+                    {entry.useCases.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+
+                <div class="section caution">
+                  <h3>導入注意</h3>
+                  <ul>
+                    {entry.cautions.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+
+                <div class="meta">
+                  <span>{entry.language}</span>
+                  <span>{entry.license}</span>
+                  <span>更新 {formatDate(entry.lastPushedAt || entry.submittedAt)}</span>
+                </div>
+
+                <div class="tags">
+                  {entry.tags.map((tag) => <span>{tag}</span>)}
+                </div>
+
+                <details>
+                  <summary>啟動或安裝方式</summary>
+                  <p>{entry.install}</p>
+                </details>
+
+                <div class="links">
+                  <a href={entry.repoUrl} target="_blank" rel="noreferrer">原始碼</a>
+                  {entry.homepage ? <a href={entry.homepage} target="_blank" rel="noreferrer">網站</a> : null}
+                </div>
+              </article>
+            ))
+          )
+        }
+        <div class="noResults" id="noResults" hidden>
+          <h2>沒有符合條件的工具</h2>
+          <p>試著改用較短的關鍵字，或切回全部教育階段與標籤。</p>
+        </div>
+      </section>
+
+      <footer class="siteFooter">
+        <span>資料來源：list.txt 與 GitHub API</span>
+        <span>最近同步：{lastUpdated ? formatDate(lastUpdated) : "尚無資料"}</span>
+      </footer>
+    </main>
+
+    <script>
+      function requiredElement<T extends HTMLElement>(selector: string): T {
+        const element = document.querySelector<T>(selector);
+        if (!element) throw new Error(`Missing required element: ${selector}`);
+        return element;
+      }
+
+      const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
+      const catalog = requiredElement<HTMLElement>("#catalog");
+      const noResults = requiredElement<HTMLElement>("#noResults");
+      const controls = {
+        search: requiredElement<HTMLInputElement>("#search"),
+        level: requiredElement<HTMLSelectElement>("#level"),
+        tag: requiredElement<HTMLSelectElement>("#tag"),
+        sort: requiredElement<HTMLSelectElement>("#sort")
+      };
+
+      function data(card: HTMLElement, key: string): string {
+        return card.dataset[key] ?? "";
+      }
+
+      function matches(card: HTMLElement) {
+        const query = controls.search.value.trim().toLowerCase();
+        const level = controls.level.value;
+        const tag = controls.tag.value;
+        const haystack = [
+          data(card, "search"),
+          data(card, "name"),
+          data(card, "description"),
+          data(card, "author"),
+          data(card, "github"),
+          data(card, "language").toLowerCase(),
+          data(card, "levels"),
+          data(card, "tags"),
+          data(card, "useCases")
+        ].join(" ");
+
+        return (
+          (!query || haystack.includes(query)) &&
+          (!level || data(card, "levels").split(",").includes(level)) &&
+          (!tag || data(card, "tags").split(",").includes(tag))
+        );
+      }
+
+      function sortCards(visibleCards: HTMLElement[]) {
+        const mode = controls.sort.value;
+        return visibleCards.sort((a, b) => {
+          if (mode === "name") return data(a, "name").localeCompare(data(b, "name"));
+          if (mode === "updated") return data(b, "updated").localeCompare(data(a, "updated"));
+          return Number(data(b, "stars")) - Number(data(a, "stars"));
+        });
+      }
+
+      function render() {
+        const visible = sortCards(cards.filter(matches));
+        cards.forEach((card) => {
+          card.hidden = !visible.includes(card);
+        });
+        visible.forEach((card) => catalog.appendChild(card));
+        noResults.hidden = cards.length === 0 || visible.length > 0;
+      }
+
+      Object.values(controls).forEach((control) => control.addEventListener("input", render));
+      render();
+    </script>
+  </body>
+</html>
