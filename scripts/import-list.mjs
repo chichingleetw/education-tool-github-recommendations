@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { Buffer } from "node:buffer";
-import { normalizeEntry, stringifyCatalogYaml } from "./catalog-schema.mjs";
+import { normalizeEntry, parseCatalogYaml, stringifyCatalogYaml } from "./catalog-schema.mjs";
 
 const listPath = path.resolve("list.txt");
 const catalogDir = path.resolve("catalog");
@@ -150,14 +150,48 @@ function audienceAnalysisRecommendation() {
   };
 }
 
-function buildEntry(repo, repoData, readme) {
-  const recommendation =
-    repo === "chichingleetw/audience-analysis"
-      ? audienceAnalysisRecommendation()
-      : genericRecommendation(repo, repoData, readme);
+function handRaiseCounterRecommendation() {
+  return {
+    name: "聽眾舉手統計",
+    description:
+      "透過瀏覽器鏡頭與視覺模型統計現場聽眾人數、舉手人數與舉手比例，協助教師掌握互動回應。",
+    educatorSummary:
+      "這是一個可直接在瀏覽器開啟的單頁工具，可連接攝影機並呼叫視覺模型 API，手動或定時統計現場聽眾總人數、舉手人數與比例。它適合在講座、課堂提問、即時投票或大型活動中快速掌握群體回應，但仍應把結果視為輔助觀察資料，而非個別學生表現判定。",
+    educationLevels: ["國中", "高中", "大學", "成人教育/教師研習"],
+    useCases: [
+      "課堂提問後快速估計整體舉手回應比例",
+      "講座或工作坊中投影全螢幕儀表板，輔助主持人掌握互動狀況",
+      "比較不同活動段落的參與度變化，作為課後教學反思資料"
+    ],
+    cautions: [
+      "使用攝影機前需透明告知並取得必要同意",
+      "統計結果可能受拍攝角度、遮擋與模型判斷影響，應以人工觀察輔助確認",
+      "API key 需由使用者自行保管，並確認影像傳輸符合校內資料保護規範"
+    ],
+    install:
+      "使用 Chrome 或 Edge 開啟 舉手統計.html，允許攝影機權限後選擇 API 服務並填入 API key 或 Bearer token。若直接開啟檔案遇到瀏覽器安全限制，可改用本機靜態伺服器提供檔案。"
+  };
+}
 
-  const entry = {
-    ...recommendation,
+async function existingEntriesByRepo() {
+  const entries = new Map();
+  try {
+    const names = await fs.readdir(catalogDir);
+    for (const name of names) {
+      if (!name.endsWith(".yaml") && !name.endsWith(".yml")) continue;
+      const filePath = path.join(catalogDir, name);
+      const raw = await fs.readFile(filePath, "utf8");
+      const entry = normalizeEntry(parseCatalogYaml(raw), path.relative(process.cwd(), filePath));
+      entries.set(entry.repo, { entry, filePath });
+    }
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+  return entries;
+}
+
+function dynamicRepoFields(repo, repoData) {
+  return {
     authorName: repoData.owner?.login || repo.split("/")[0],
     authorGitHub: repo.split("/")[0],
     repo,
@@ -169,11 +203,25 @@ function buildEntry(repo, repoData, readme) {
       ...(repoData.topics || []).slice(0, 5)
     ],
     language: repoData.language || "Unknown",
+    license: repoData.license?.spdx_id || repoData.license?.name || "Unspecified"
+  };
+}
+
+function buildEntry(repo, repoData, readme) {
+  const recommendation = (() => {
+    if (repo === "chichingleetw/audience-analysis") return audienceAnalysisRecommendation();
+    if (repo === "chichingleetw/hand-raise-counter") return handRaiseCounterRecommendation();
+    return genericRecommendation(repo, repoData, readme);
+  })();
+
+  const entry = {
+    ...recommendation,
+    ...dynamicRepoFields(repo, repoData),
     install:
-      repo === "chichingleetw/audience-analysis"
+      recommendation.install ||
+      (repo === "chichingleetw/audience-analysis"
         ? "下載或 clone 專案後，建議用 python3 -m http.server 8000 啟動本機 HTTP server，再開啟 聽眾分析.html。使用前需準備可用攝影機與支援影像輸入的 API key。"
-        : "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    license: repoData.license?.spdx_id || repoData.license?.name || "Unspecified",
+        : "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。"),
     submittedAt: new Date().toISOString().slice(0, 10)
   };
 
@@ -196,12 +244,22 @@ async function main() {
   }
 
   await fs.mkdir(catalogDir, { recursive: true });
+  const existing = await existingEntriesByRepo();
 
   for (const repo of repos) {
     const repoData = await fetchJson(`https://api.github.com/repos/${repo}`);
     const readme = await fetchReadme(repo);
-    const entry = buildEntry(repo, repoData, readme);
-    const filePath = path.join(catalogDir, `${slugify(repo.split("/")[1])}.yaml`);
+    const current = existing.get(repo);
+    const entry = current
+      ? normalizeEntry(
+          {
+            ...current.entry,
+            ...dynamicRepoFields(repo, repoData)
+          },
+          path.relative(process.cwd(), current.filePath)
+        )
+      : buildEntry(repo, repoData, readme);
+    const filePath = current?.filePath || path.join(catalogDir, `${slugify(repo.split("/")[1])}.yaml`);
     await fs.writeFile(filePath, stringifyCatalogYaml(entry));
     console.log(`Imported ${repo} -> ${path.relative(process.cwd(), filePath)}`);
   }
