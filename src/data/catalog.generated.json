@@ -171,8 +171,7 @@
     "educationLevels": [
       "中小學",
       "高中",
-      "大學",
-      "研究"
+      "大學"
     ],
     "useCases": [
       "課堂暖身、概念檢核或單選題即時練習",
@@ -191,7 +190,7 @@
     "sourcePath": "catalog/github-class-quiz-helper.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-08T04:24:15Z",
+    "lastPushedAt": "2026-07-08T13:11:36Z",
     "repoUrl": "https://github.com/chichingleetw/github-class-quiz-helper",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   }

@@ -14,7 +14,6 @@ educationLevels:
   - 中小學
   - 高中
   - 大學
-  - 研究
 useCases:
   - 課堂暖身、概念檢核或單選題即時練習
   - 老師用 Google Sheet 控制題目開放與答案公布節奏
