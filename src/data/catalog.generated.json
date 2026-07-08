@@ -185,7 +185,7 @@
       "若公布前將 correctAnswer 寫在公開 CSV，懂技術的學生可能提前看到答案"
     ],
     "language": "JavaScript",
-    "install": "可依 README 連結進入線上版本使用。若要自行部署或改作課堂版本，請先閱讀 GitHub 專案內容並在測試環境確認權限、資料處理與瀏覽器相容性。",
+    "install": "可依 README 連結進入線上版本使用：https://chichingleetw.github.io/github-class-quiz-helper/teacher.html。若要自行部署或改作課堂版本，請先閱讀 GitHub 專案內容並在測試環境確認權限、資料處理與瀏覽器相容性。",
     "license": "Unspecified",
     "submittedAt": "2026-07-08",
     "sourcePath": "catalog/github-class-quiz-helper.yaml",
