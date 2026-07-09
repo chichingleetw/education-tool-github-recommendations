@@ -71,7 +71,7 @@
     "sourcePath": "catalog/hand-raise-counter.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-07T04:39:03Z",
+    "lastPushedAt": "2026-07-09T12:22:36Z",
     "repoUrl": "https://github.com/chichingleetw/hand-raise-counter",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
@@ -226,6 +226,44 @@
     "forks": 0,
     "lastPushedAt": "2026-07-07T22:29:00Z",
     "repoUrl": "https://github.com/chichingleetw/learning-portfolio-ai-coach",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "無邊際白板 Infinite Whiteboard",
+    "description": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。",
+    "educatorSummary": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
+    "authorName": "chichingleetw",
+    "authorGitHub": "chichingleetw",
+    "repo": "chichingleetw/infinite-whiteboard",
+    "homepage": "",
+    "launchUrl": "https://chichingleetw.github.io/infinite-whiteboard/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "課前評估工具功能是否符合課程需求",
+      "作為課堂活動、教學管理或學習輔助的候選工具",
+      "搭配 GitHub README 與原始碼了解部署方式"
+    ],
+    "cautions": [
+      "正式使用前請先小規模測試",
+      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
+      "GitHub stars 僅作為社群參考，不代表教學品質保證"
+    ],
+    "language": "HTML",
+    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-09",
+    "sourcePath": "catalog/infinite-whiteboard.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-09T13:44:07Z",
+    "repoUrl": "https://github.com/chichingleetw/infinite-whiteboard",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
