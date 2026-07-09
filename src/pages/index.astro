@@ -63,8 +63,8 @@ const totalRepos = entries.length;
             <option value="updated">最近更新</option>
           </select>
         </label>
-        <button class="toolbarButton" id="toggleDetails" type="button" aria-pressed="false">
-          隱藏細節
+        <button class="toolbarButton" id="toggleDetails" type="button" aria-pressed="true">
+          展開細節
         </button>
       </section>
 
@@ -78,7 +78,7 @@ const totalRepos = entries.length;
           ) : (
             entries.map((entry) => (
               <article
-                class="card"
+                class="card is-compact"
                 data-name={entry.name.toLowerCase()}
                 data-description={`${entry.description} ${entry.educatorSummary}`.toLowerCase()}
                 data-search={`${entry.name} ${entry.description} ${entry.educatorSummary} ${entry.educationLevels.join(" ")} ${entry.useCases.join(" ")} ${entry.cautions.join(" ")} ${entry.install} ${entry.language} ${entry.authorGitHub}`.toLowerCase()}
@@ -260,6 +260,7 @@ const totalRepos = entries.length;
         });
         syncCardExpandButton(card);
       });
+      setCompactMode(true);
       render();
     </script>
   </body>
