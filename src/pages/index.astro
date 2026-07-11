@@ -100,11 +100,11 @@ function compactIntro(value: string) {
         <button class="toolbarButton" id="toggleDetails" type="button" aria-pressed="true">
           展開細節
         </button>
-        <div class="favoriteTools" aria-label="愛心清單工具">
-          <span id="favoriteCount" aria-live="polite">0 個愛心</span>
-          <button type="button" id="clearFavorites">清除愛心</button>
-          <button type="button" id="exportFavorites">匯出愛心清單</button>
-          <button type="button" id="importFavorites">匯入愛心清單</button>
+        <div class="favoriteTools" aria-label="收藏清單工具">
+          <span id="favoriteCount" aria-live="polite">0 個收藏</span>
+          <button type="button" id="clearFavorites">清除收藏</button>
+          <button type="button" id="exportFavorites">匯出收藏清單</button>
+          <button type="button" id="importFavorites">匯入收藏清單</button>
           <input id="favoriteFile" type="file" accept="application/json,.json" hidden />
         </div>
       </section>
@@ -134,6 +134,15 @@ function compactIntro(value: string) {
               >
                 <div class="cardTop">
                   <div class="identity">
+                    <button
+                      class="favoriteButton"
+                      type="button"
+                      aria-pressed="false"
+                      aria-label={`將 ${entry.name} 加入收藏清單`}
+                      title="加入收藏清單"
+                    >
+                      <span aria-hidden="true">♡</span>
+                    </button>
                     <div>
                       <h2>{entry.name}</h2>
                       <a href={`https://github.com/${entry.authorGitHub}`} target="_blank" rel="noreferrer">
@@ -142,20 +151,9 @@ function compactIntro(value: string) {
                       <p class="compactIntro">{compactIntro(entry.description)}</p>
                     </div>
                   </div>
-                  <div class="cardActions">
-                    <button
-                      class="favoriteButton"
-                      type="button"
-                      aria-pressed="false"
-                      aria-label={`將 ${entry.name} 加入愛心清單`}
-                      title="加入愛心清單"
-                    >
-                      <span aria-hidden="true">♡</span>
-                    </button>
-                    <div class="rating" title="GitHub Stars">
-                      <span aria-hidden="true">★</span>
-                      <strong>{entry.stars}</strong>
-                    </div>
+                  <div class="rating" title="GitHub Stars">
+                    <span aria-hidden="true">★</span>
+                    <strong>{entry.stars}</strong>
                   </div>
                 </div>
 
@@ -272,12 +270,12 @@ function compactIntro(value: string) {
           const isFavorite = favorites.has(data(card, "favoriteId"));
           button.classList.toggle("is-favorite", isFavorite);
           button.setAttribute("aria-pressed", String(isFavorite));
-          button.setAttribute("aria-label", `${isFavorite ? "從" : "將"} ${name} ${isFavorite ? "移出" : "加入"}愛心清單`);
-          button.title = isFavorite ? "移出愛心清單" : "加入愛心清單";
+          button.setAttribute("aria-label", `${isFavorite ? "從" : "將"} ${name} ${isFavorite ? "移出" : "加入"}收藏清單`);
+          button.title = isFavorite ? "移出收藏清單" : "加入收藏清單";
           const icon = button.querySelector("span");
           if (icon) icon.textContent = isFavorite ? "♥" : "♡";
         });
-        controls.favoriteCount.textContent = `${favorites.size} 個愛心`;
+        controls.favoriteCount.textContent = `${favorites.size} 個收藏`;
         controls.clearFavorites.disabled = favorites.size === 0;
         controls.exportFavorites.disabled = favorites.size === 0;
       }
@@ -308,9 +306,9 @@ function compactIntro(value: string) {
           favorites = new Set(imported);
           saveFavorites();
           syncFavorites();
-          window.alert(`已匯入 ${favorites.size} 個愛心。`);
+          window.alert(`已匯入 ${favorites.size} 個收藏。`);
         } catch {
-          window.alert("無法匯入：請選擇由本站匯出的有效 JSON 愛心清單。");
+          window.alert("無法匯入：請選擇由本站匯出的有效 JSON 收藏清單。");
         } finally {
           controls.favoriteFile.value = "";
         }
@@ -426,7 +424,7 @@ function compactIntro(value: string) {
         setCompactMode(isCompact);
       });
       controls.clearFavorites.addEventListener("click", () => {
-        if (favorites.size === 0 || !window.confirm("確定要清除所有愛心嗎？")) return;
+        if (favorites.size === 0 || !window.confirm("確定要清除所有收藏嗎？")) return;
         favorites.clear();
         saveFavorites();
         syncFavorites();
