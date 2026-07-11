@@ -340,10 +340,6 @@ select:focus,
   line-height: 1;
 }
 
-.identity .favoriteButton {
-  align-self: flex-start;
-}
-
 .favoriteButton:hover,
 .favoriteButton.is-favorite {
   background: transparent;

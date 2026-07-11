@@ -134,15 +134,6 @@ function compactIntro(value: string) {
               >
                 <div class="cardTop">
                   <div class="identity">
-                    <button
-                      class="favoriteButton"
-                      type="button"
-                      aria-pressed="false"
-                      aria-label={`將 ${entry.name} 加入收藏清單`}
-                      title="加入收藏清單"
-                    >
-                      <span aria-hidden="true">♡</span>
-                    </button>
                     <div>
                       <h2>{entry.name}</h2>
                       <a href={`https://github.com/${entry.authorGitHub}`} target="_blank" rel="noreferrer">
@@ -189,6 +180,15 @@ function compactIntro(value: string) {
                 </div>
 
                 <div class="links">
+                  <button
+                    class="favoriteButton"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label={`將 ${entry.name} 加入收藏清單`}
+                    title="加入收藏清單"
+                  >
+                    <span aria-hidden="true">♡</span>
+                  </button>
                   <button
                     class="detailReveal"
                     type="button"
