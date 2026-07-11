@@ -51,6 +51,15 @@ function compactIntro(value: string) {
               ，和我們一起補充、完善這份教育工具清單，讓更多老師與學生都能受益。
             </p>
           </div>
+          <nav class="levelQuickSelect" aria-label="依教育階段快速篩選">
+            <span>教育階段</span>
+            <div>
+              <button type="button" data-level-filter="" aria-pressed="true">全部</button>
+              {educationLevels.map((level) => (
+                <button type="button" data-level-filter={level} aria-pressed="false">{level}</button>
+              ))}
+            </div>
+          </nav>
         </div>
         <div class="stats" aria-label="網站統計">
           <div>
@@ -83,8 +92,8 @@ function compactIntro(value: string) {
         <label>
           <span>排序</span>
           <select id="sort">
-            <option value="stars">Stars</option>
             <option value="name">名稱</option>
+            <option value="stars">Stars</option>
             <option value="updated">最近更新</option>
           </select>
         </label>
@@ -201,6 +210,7 @@ function compactIntro(value: string) {
       const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
       const catalog = requiredElement<HTMLElement>("#catalog");
       const noResults = requiredElement<HTMLElement>("#noResults");
+      const levelButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-level-filter]"));
       const controls = {
         search: requiredElement<HTMLInputElement>("#search"),
         level: requiredElement<HTMLSelectElement>("#level"),
@@ -241,6 +251,36 @@ function compactIntro(value: string) {
         });
       }
 
+      function validLevel(value: string) {
+        return Array.from(controls.level.options).some((option) => option.value === value);
+      }
+
+      function levelFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const value = params.get("level") ?? params.get("教育階段") ?? "";
+        return validLevel(value) ? value : "";
+      }
+
+      function syncLevelButtons() {
+        levelButtons.forEach((button) => {
+          const isActive = (button.dataset.levelFilter ?? "") === controls.level.value;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+      }
+
+      function syncLevelUrl() {
+        const url = new URL(window.location.href);
+        if (controls.level.value) {
+          url.searchParams.set("level", controls.level.value);
+          url.searchParams.delete("教育階段");
+        } else {
+          url.searchParams.delete("level");
+          url.searchParams.delete("教育階段");
+        }
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+
       function render() {
         const visible = sortCards(cards.filter(matches));
         cards.forEach((card) => {
@@ -273,8 +313,20 @@ function compactIntro(value: string) {
       }
 
       controls.search.addEventListener("input", render);
-      controls.level.addEventListener("change", render);
+      controls.level.addEventListener("change", () => {
+        syncLevelButtons();
+        syncLevelUrl();
+        render();
+      });
       controls.sort.addEventListener("change", render);
+      levelButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          controls.level.value = button.dataset.levelFilter ?? "";
+          syncLevelButtons();
+          syncLevelUrl();
+          render();
+        });
+      });
       controls.toggleDetails.addEventListener("click", () => {
         const isCompact = !cards.every((card) => card.classList.contains("is-compact"));
         setCompactMode(isCompact);
@@ -286,6 +338,9 @@ function compactIntro(value: string) {
         });
         syncCardExpandButton(card);
       });
+      controls.level.value = levelFromUrl();
+      syncLevelButtons();
+      syncLevelUrl();
       setCompactMode(true);
       render();
     </script>
