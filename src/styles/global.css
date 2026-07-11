@@ -183,6 +183,12 @@ h1 {
   background: #fbe4e9;
 }
 
+.favoriteTools button[aria-pressed="true"] {
+  border-color: #a3314b;
+  background: #a3314b;
+  color: #ffffff;
+}
+
 .favoriteTools button:focus,
 .favoriteButton:focus {
   outline: 3px solid rgba(163, 49, 75, 0.16);

@@ -102,6 +102,7 @@ function compactIntro(value: string) {
         </button>
         <div class="favoriteTools" aria-label="收藏清單工具">
           <span id="favoriteCount" aria-live="polite">0 個收藏</span>
+          <button type="button" id="favoriteOnly" aria-pressed="false">只顯示收藏</button>
           <button type="button" id="clearFavorites">清除收藏</button>
           <button type="button" id="exportFavorites">匯出收藏清單</button>
           <button type="button" id="importFavorites">匯入收藏清單</button>
@@ -234,6 +235,7 @@ function compactIntro(value: string) {
         sort: requiredElement<HTMLSelectElement>("#sort"),
         toggleDetails: requiredElement<HTMLButtonElement>("#toggleDetails"),
         favoriteCount: requiredElement<HTMLElement>("#favoriteCount"),
+        favoriteOnly: requiredElement<HTMLButtonElement>("#favoriteOnly"),
         clearFavorites: requiredElement<HTMLButtonElement>("#clearFavorites"),
         exportFavorites: requiredElement<HTMLButtonElement>("#exportFavorites"),
         importFavorites: requiredElement<HTMLButtonElement>("#importFavorites"),
@@ -306,6 +308,7 @@ function compactIntro(value: string) {
           favorites = new Set(imported);
           saveFavorites();
           syncFavorites();
+          render();
           window.alert(`已匯入 ${favorites.size} 個收藏。`);
         } catch {
           window.alert("無法匯入：請選擇由本站匯出的有效 JSON 收藏清單。");
@@ -330,7 +333,9 @@ function compactIntro(value: string) {
 
         return (
           (!query || haystack.includes(query)) &&
-          (!level || data(card, "levels").split(",").includes(level))
+          (!level || data(card, "levels").split(",").includes(level)) &&
+          (controls.favoriteOnly.getAttribute("aria-pressed") !== "true" ||
+            favorites.has(data(card, "favoriteId")))
         );
       }
 
@@ -423,11 +428,17 @@ function compactIntro(value: string) {
         const isCompact = !cards.every((card) => card.classList.contains("is-compact"));
         setCompactMode(isCompact);
       });
+      controls.favoriteOnly.addEventListener("click", () => {
+        const isActive = controls.favoriteOnly.getAttribute("aria-pressed") !== "true";
+        controls.favoriteOnly.setAttribute("aria-pressed", String(isActive));
+        render();
+      });
       controls.clearFavorites.addEventListener("click", () => {
         if (favorites.size === 0 || !window.confirm("確定要清除所有收藏嗎？")) return;
         favorites.clear();
         saveFavorites();
         syncFavorites();
+        render();
       });
       controls.exportFavorites.addEventListener("click", downloadFavorites);
       controls.importFavorites.addEventListener("click", () => controls.favoriteFile.click());
@@ -441,6 +452,7 @@ function compactIntro(value: string) {
           favorites.has(id) ? favorites.delete(id) : favorites.add(id);
           saveFavorites();
           syncFavorites();
+          render();
         });
         card.querySelector(".detailReveal")?.addEventListener("click", () => {
           card.classList.toggle("is-expanded");
