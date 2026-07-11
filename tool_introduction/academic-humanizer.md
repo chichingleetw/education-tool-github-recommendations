@@ -1,0 +1,46 @@
+---
+name: Academic Humanizer
+authorName: AIScientists-Dev
+authorGitHub: AIScientists-Dev
+repo: AIScientists-Dev/academic-humanizer
+homepage: https://morphmind.ai
+launchUrl:
+tags:
+  - education
+  - teaching
+  - github
+  - research
+  - academic-writing
+  - grant-writing
+educationLevels:
+  - 研究
+language: Unknown
+license: MIT
+submittedAt: "2026-07-11"
+---
+
+# Academic Humanizer
+
+## 簡短描述
+
+協助研究者修整 AI 輔助產生的論文與計畫書草稿，去除空泛 AI 文風，同時保留作者聲音、數據、引用與學術精確性。
+
+## 教育工作者摘要
+
+Academic Humanizer 是一個面向論文與 NSF/NIH 等研究計畫書的 AI editing skill，可用於 Claude Code、Codex、MorphMind 或其他能讀取 SKILL.md 的代理工具。它聚焦在學術寫作中的清晰度、作者聲音與 claim-evidence 對齊，避免一般「humanizer」把學術精確措辭、引用或數據一起磨平。對研究方法、學術寫作或研究生訓練課程而言，它適合示範如何把 AI 產出的初稿轉成更可審閱、可追溯且符合學術語氣的版本。
+
+## 教學用途
+
+- 在研究生論文寫作或計畫書工作坊中示範如何辨識並修整 AI 式空泛語氣
+- 協助學生檢查論述強度是否與證據、數據和引用相稱
+- 作為建立個人化學術寫作 skill 的範例，讓研究者依自己的已發表作品校準語氣
+
+## 導入注意
+
+- 此工具是編修輔助，不應用來規避 AI 使用揭露、審查規範或投稿倫理要求
+- 任何修改後的數據、引用、claim 與研究貢獻仍需由作者逐項查核
+- 不同領域和期刊的寫作慣例不同，正式使用前應依課程、實驗室或投稿場域調整規則
+
+## 啟動或安裝方式
+
+可依 README 將 repository clone 到本機 skill 目錄，例如 ~/.claude/skills/academic-humanizer，或將 SKILL.md 作為 Codex、Claude Code、MorphMind 等代理工具的 skill/system prompt 使用。使用時可貼上段落或指向 main.tex，並可提供過去論文作為作者聲音校準依據。

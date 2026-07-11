@@ -1,5 +1,87 @@
 [
   {
+    "name": "Academic Humanizer",
+    "description": "協助研究者修整 AI 輔助產生的論文與計畫書草稿，去除空泛 AI 文風，同時保留作者聲音、數據、引用與學術精確性。",
+    "educatorSummary": "Academic Humanizer 是一個面向論文與 NSF/NIH 等研究計畫書的 AI editing skill，可用於 Claude Code、Codex、MorphMind 或其他能讀取 SKILL.md 的代理工具。它聚焦在學術寫作中的清晰度、作者聲音與 claim-evidence 對齊，避免一般「humanizer」把學術精確措辭、引用或數據一起磨平。對研究方法、學術寫作或研究生訓練課程而言，它適合示範如何把 AI 產出的初稿轉成更可審閱、可追溯且符合學術語氣的版本。",
+    "authorName": "AIScientists-Dev",
+    "authorGitHub": "AIScientists-Dev",
+    "repo": "AIScientists-Dev/academic-humanizer",
+    "homepage": "https://morphmind.ai",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "academic-writing",
+      "grant-writing"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "在研究生論文寫作或計畫書工作坊中示範如何辨識並修整 AI 式空泛語氣",
+      "協助學生檢查論述強度是否與證據、數據和引用相稱",
+      "作為建立個人化學術寫作 skill 的範例，讓研究者依自己的已發表作品校準語氣"
+    ],
+    "cautions": [
+      "此工具是編修輔助，不應用來規避 AI 使用揭露、審查規範或投稿倫理要求",
+      "任何修改後的數據、引用、claim 與研究貢獻仍需由作者逐項查核",
+      "不同領域和期刊的寫作慣例不同，正式使用前應依課程、實驗室或投稿場域調整規則"
+    ],
+    "language": "Unknown",
+    "install": "可依 README 將 repository clone 到本機 skill 目錄，例如 ~/.claude/skills/academic-humanizer，或將 SKILL.md 作為 Codex、Claude Code、MorphMind 等代理工具的 skill/system prompt 使用。使用時可貼上段落或指向 main.tex，並可提供過去論文作為作者聲音校準依據。",
+    "license": "MIT",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/academic-humanizer.yaml",
+    "stars": 269,
+    "forks": 32,
+    "lastPushedAt": "2026-07-03T07:58:33Z",
+    "repoUrl": "https://github.com/AIScientists-Dev/academic-humanizer",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/226059021?v=4"
+  },
+  {
+    "name": "ScholarSkill",
+    "description": "以 Obsidian 為核心的學術閱讀工作流，協助研究者把論文閱讀轉成可連結、可修訂、會持續演化的知識系統。",
+    "educatorSummary": "ScholarSkill 是一個 OpenClaw skill，設計目標不是只產生一次性的論文摘要，而是協助代理人進行結構化閱讀、知識連結、舊理解修訂與批判性反思，並把成果沉澱到 Obsidian vault。它適合研究方法、文獻回顧、研究生讀書會或個人知識管理教學，讓學生練習把新論文放回既有研究脈絡，辨識概念關係、證據強弱與需要更新的舊筆記。",
+    "authorName": "EESJGong",
+    "authorGitHub": "EESJGong",
+    "repo": "EESJGong/scholar-skill",
+    "homepage": "",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "obsidian",
+      "knowledge-management"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "引導研究生把論文閱讀產出整理成可重讀、可連結的 Obsidian 筆記",
+      "在文獻回顧課程中練習比較論文主張、證據、方法限制與研究脈絡",
+      "協助研究團隊建立會隨新文獻更新的知識地圖，而不只是累積摘要檔案"
+    ],
+    "cautions": [
+      "專案仍在測試階段，正式導入課程或研究流程前應先以小型文獻集合試用",
+      "若連接 Obsidian vault，需先確認資料夾路徑、模板語言包與既有筆記備份",
+      "AI 產出的閱讀筆記與知識連結仍需研究者查證，避免把錯誤摘要擴散到知識庫"
+    ],
+    "language": "Python",
+    "install": "可 clone repository 後在 OpenClaw 中安裝，並選擇 en 或 zh-CN 語言包，再執行對應的 configure.py 並指定 Obsidian vault path。README 也提供共享 skills 目錄與特定 workspace 兩種安裝方式，手動安裝時需依需求補齊 obsidian、arxiv、pdf、research hub 等相依 skill。",
+    "license": "MIT",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/scholar-skill.yaml",
+    "stars": 210,
+    "forks": 17,
+    "lastPushedAt": "2026-03-20T03:12:48Z",
+    "repoUrl": "https://github.com/EESJGong/scholar-skill",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/118050627?v=4"
+  },
+  {
     "name": "ClassPop 課堂即時回答系統",
     "description": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。",
     "educatorSummary": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
@@ -340,7 +422,7 @@
     "sourcePath": "catalog/classroom-lab-tzk.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-10T12:09:52Z",
+    "lastPushedAt": "2026-07-10T17:04:38Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -378,7 +460,7 @@
     "sourcePath": "catalog/classroom-timer-tzk.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-09T10:56:21Z",
+    "lastPushedAt": "2026-07-10T15:26:45Z",
     "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -417,7 +499,7 @@
     "sourcePath": "catalog/meeting-time-survey-system.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-10T14:12:41Z",
+    "lastPushedAt": "2026-07-11T00:12:08Z",
     "repoUrl": "https://github.com/chichingleetw/meeting-time-survey-system",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
