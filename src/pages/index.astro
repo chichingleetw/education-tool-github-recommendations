@@ -100,6 +100,13 @@ function compactIntro(value: string) {
         <button class="toolbarButton" id="toggleDetails" type="button" aria-pressed="true">
           展開細節
         </button>
+        <div class="favoriteTools" aria-label="愛心清單工具">
+          <span id="favoriteCount" aria-live="polite">0 個愛心</span>
+          <button type="button" id="clearFavorites">清除愛心</button>
+          <button type="button" id="exportFavorites">匯出愛心清單</button>
+          <button type="button" id="importFavorites">匯入愛心清單</button>
+          <input id="favoriteFile" type="file" accept="application/json,.json" hidden />
+        </div>
       </section>
 
       <section class="catalog" id="catalog" aria-live="polite">
@@ -114,6 +121,7 @@ function compactIntro(value: string) {
               <article
                 class="card is-compact"
                 data-name={entry.name.toLowerCase()}
+                data-favorite-id={entry.repoUrl}
                 data-description={`${entry.description} ${entry.educatorSummary}`.toLowerCase()}
                 data-search={`${entry.name} ${entry.description} ${entry.educatorSummary} ${entry.educationLevels.join(" ")} ${entry.useCases.join(" ")} ${entry.cautions.join(" ")} ${entry.install} ${entry.language} ${entry.authorGitHub}`.toLowerCase()}
                 data-author={entry.authorName.toLowerCase()}
@@ -134,9 +142,20 @@ function compactIntro(value: string) {
                       <p class="compactIntro">{compactIntro(entry.description)}</p>
                     </div>
                   </div>
-                  <div class="rating" title="GitHub Stars">
-                    <span aria-hidden="true">★</span>
-                    <strong>{entry.stars}</strong>
+                  <div class="cardActions">
+                    <button
+                      class="favoriteButton"
+                      type="button"
+                      aria-pressed="false"
+                      aria-label={`將 ${entry.name} 加入愛心清單`}
+                      title="加入愛心清單"
+                    >
+                      <span aria-hidden="true">♡</span>
+                    </button>
+                    <div class="rating" title="GitHub Stars">
+                      <span aria-hidden="true">★</span>
+                      <strong>{entry.stars}</strong>
+                    </div>
                   </div>
                 </div>
 
@@ -215,11 +234,86 @@ function compactIntro(value: string) {
         search: requiredElement<HTMLInputElement>("#search"),
         level: requiredElement<HTMLSelectElement>("#level"),
         sort: requiredElement<HTMLSelectElement>("#sort"),
-        toggleDetails: requiredElement<HTMLButtonElement>("#toggleDetails")
+        toggleDetails: requiredElement<HTMLButtonElement>("#toggleDetails"),
+        favoriteCount: requiredElement<HTMLElement>("#favoriteCount"),
+        clearFavorites: requiredElement<HTMLButtonElement>("#clearFavorites"),
+        exportFavorites: requiredElement<HTMLButtonElement>("#exportFavorites"),
+        importFavorites: requiredElement<HTMLButtonElement>("#importFavorites"),
+        favoriteFile: requiredElement<HTMLInputElement>("#favoriteFile")
       };
+
+      const FAVORITES_KEY = "education-tool-favorites";
+      const availableFavoriteIds = new Set(cards.map((card) => data(card, "favoriteId")));
+      let favorites = loadFavorites();
 
       function data(card: HTMLElement, key: string): string {
         return card.dataset[key] ?? "";
+      }
+
+      function loadFavorites(): Set<string> {
+        try {
+          const stored = JSON.parse(localStorage.getItem(FAVORITES_KEY) ?? "[]");
+          if (!Array.isArray(stored)) return new Set();
+          return new Set(stored.filter((id): id is string => typeof id === "string"));
+        } catch {
+          return new Set();
+        }
+      }
+
+      function saveFavorites() {
+        localStorage.setItem(FAVORITES_KEY, JSON.stringify([...favorites]));
+      }
+
+      function syncFavorites() {
+        cards.forEach((card) => {
+          const button = card.querySelector<HTMLButtonElement>(".favoriteButton");
+          if (!button) return;
+          const name = card.querySelector("h2")?.textContent?.trim() || "此工具";
+          const isFavorite = favorites.has(data(card, "favoriteId"));
+          button.classList.toggle("is-favorite", isFavorite);
+          button.setAttribute("aria-pressed", String(isFavorite));
+          button.setAttribute("aria-label", `${isFavorite ? "從" : "將"} ${name} ${isFavorite ? "移出" : "加入"}愛心清單`);
+          button.title = isFavorite ? "移出愛心清單" : "加入愛心清單";
+          const icon = button.querySelector("span");
+          if (icon) icon.textContent = isFavorite ? "♥" : "♡";
+        });
+        controls.favoriteCount.textContent = `${favorites.size} 個愛心`;
+        controls.clearFavorites.disabled = favorites.size === 0;
+        controls.exportFavorites.disabled = favorites.size === 0;
+      }
+
+      function downloadFavorites() {
+        const favoriteEntries = cards
+          .filter((card) => favorites.has(data(card, "favoriteId")))
+          .map((card) => ({
+            name: card.querySelector("h2")?.textContent?.trim() || "",
+            repoUrl: data(card, "favoriteId")
+          }));
+        const payload = JSON.stringify({ version: 1, favorites: favoriteEntries }, null, 2);
+        const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `education-tool-favorites-${new Date().toISOString().slice(0, 10)}.json`;
+        link.click();
+        URL.revokeObjectURL(url);
+      }
+
+      async function importFavorites(file: File) {
+        try {
+          const payload = JSON.parse(await file.text());
+          const items = Array.isArray(payload) ? payload : payload?.favorites;
+          if (!Array.isArray(items)) throw new Error("invalid format");
+          const ids = items.map((item) => typeof item === "string" ? item : item?.repoUrl);
+          const imported = ids.filter((id): id is string => typeof id === "string" && availableFavoriteIds.has(id));
+          favorites = new Set(imported);
+          saveFavorites();
+          syncFavorites();
+          window.alert(`已匯入 ${favorites.size} 個愛心。`);
+        } catch {
+          window.alert("無法匯入：請選擇由本站匯出的有效 JSON 愛心清單。");
+        } finally {
+          controls.favoriteFile.value = "";
+        }
       }
 
       function matches(card: HTMLElement) {
@@ -331,7 +425,25 @@ function compactIntro(value: string) {
         const isCompact = !cards.every((card) => card.classList.contains("is-compact"));
         setCompactMode(isCompact);
       });
+      controls.clearFavorites.addEventListener("click", () => {
+        if (favorites.size === 0 || !window.confirm("確定要清除所有愛心嗎？")) return;
+        favorites.clear();
+        saveFavorites();
+        syncFavorites();
+      });
+      controls.exportFavorites.addEventListener("click", downloadFavorites);
+      controls.importFavorites.addEventListener("click", () => controls.favoriteFile.click());
+      controls.favoriteFile.addEventListener("change", () => {
+        const file = controls.favoriteFile.files?.[0];
+        if (file) void importFavorites(file);
+      });
       cards.forEach((card) => {
+        card.querySelector(".favoriteButton")?.addEventListener("click", () => {
+          const id = data(card, "favoriteId");
+          favorites.has(id) ? favorites.delete(id) : favorites.add(id);
+          saveFavorites();
+          syncFavorites();
+        });
         card.querySelector(".detailReveal")?.addEventListener("click", () => {
           card.classList.toggle("is-expanded");
           syncCardExpandButton(card);
@@ -342,6 +454,7 @@ function compactIntro(value: string) {
       syncLevelButtons();
       syncLevelUrl();
       setCompactMode(true);
+      syncFavorites();
       render();
     </script>
   </body>
