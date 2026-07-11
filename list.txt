@@ -12,3 +12,5 @@ https://github.com/chichingleetw/research-skill-template-guide	研究
 https://github.com/chichingleetw/meeting-time-survey-system	其他	https://chichingleetw.github.io/meeting-time-survey-system/
 https://github.com/AIScientists-Dev/academic-humanizer/tree/main	研究
 https://github.com/EESJGong/scholar-skill	研究
+https://github.com/Imbad0202/academic-research-skills/tree/main	研究
+https://github.com/drpwchen/claude-paper-tools	研究

@@ -1,5 +1,46 @@
 [
   {
+    "name": "Academic Research Skills",
+    "description": "為 Claude Code 設計的學術研究技能套件，涵蓋研究規劃、文獻回顧、寫作、審查、修訂到定稿的完整流程。",
+    "educatorSummary": "Academic Research Skills 是一套面向研究工作流的 Claude Code skills，強調 human-in-the-loop，而不是全自動代寫論文。它把研究任務拆成規劃、文獻搜尋、寫作、品質檢查、審查、修訂與輸出等階段，並加入引用查核、邏輯一致性、資料完整性與 AI 研究常見失誤檢查。對研究生訓練、學術寫作課程或研究方法工作坊而言，它適合示範如何讓 AI 承擔繁瑣檢查與格式工作，同時保留研究者在問題定義、方法選擇、資料詮釋與論點形成上的主導權。",
+    "authorName": "Imbad0202",
+    "authorGitHub": "Imbad0202",
+    "repo": "Imbad0202/academic-research-skills",
+    "homepage": "https://buymeacoffee.com/crucify020v",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "academic-writing",
+      "literature-review"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "在研究方法或論文寫作課程中示範從研究計畫到定稿的 AI 協作流程",
+      "協助學生建立文獻回顧、引用檢查、邏輯一致性檢查與修訂迭代的工作習慣",
+      "作為討論 AI 輔助研究倫理、人工把關與自動化失誤風險的實作案例"
+    ],
+    "cautions": [
+      "此工具定位是研究輔助與品質檢查，不應替代研究者的判斷、寫作責任或 AI 使用揭露",
+      "產出的引用、方法建議、審查意見與修訂內容仍需由研究者逐項查證",
+      "部分功能需要 Claude Code、API key、Pandoc、TeX 或 Python 等環境，課堂導入前宜先完成環境測試"
+    ],
+    "language": "Python",
+    "install": "README 建議使用 Claude Code plugin 指令安裝：先加入 marketplace，再安裝 academic-research-skills。安裝後可從 /ars-plan 開始規劃論文結構，或用 /ars-lit-review 測試文獻回顧流程；若使用 Codex，README 指向另有 Codex-native 包裝的 sibling distribution。",
+    "license": "CC BY-NC 4.0",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/academic-research-skills.yaml",
+    "stars": 37247,
+    "forks": 3037,
+    "lastPushedAt": "2026-07-08T14:40:54Z",
+    "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/132531341?v=4"
+  },
+  {
     "name": "Academic Humanizer",
     "description": "協助研究者修整 AI 輔助產生的論文與計畫書草稿，去除空泛 AI 文風，同時保留作者聲音、數據、引用與學術精確性。",
     "educatorSummary": "Academic Humanizer 是一個面向論文與 NSF/NIH 等研究計畫書的 AI editing skill，可用於 Claude Code、Codex、MorphMind 或其他能讀取 SKILL.md 的代理工具。它聚焦在學術寫作中的清晰度、作者聲音與 claim-evidence 對齊，避免一般「humanizer」把學術精確措辭、引用或數據一起磨平。對研究方法、學術寫作或研究生訓練課程而言，它適合示範如何把 AI 產出的初稿轉成更可審閱、可追溯且符合學術語氣的版本。",
@@ -34,8 +75,8 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/academic-humanizer.yaml",
-    "stars": 269,
-    "forks": 32,
+    "stars": 271,
+    "forks": 33,
     "lastPushedAt": "2026-07-03T07:58:33Z",
     "repoUrl": "https://github.com/AIScientists-Dev/academic-humanizer",
     "avatarUrl": "https://avatars.githubusercontent.com/u/226059021?v=4"
@@ -80,6 +121,47 @@
     "lastPushedAt": "2026-03-20T03:12:48Z",
     "repoUrl": "https://github.com/EESJGong/scholar-skill",
     "avatarUrl": "https://avatars.githubusercontent.com/u/118050627?v=4"
+  },
+  {
+    "name": "paper-review + paper-digest",
+    "description": "兩個 Claude Code 論文閱讀 skills：一個評估單篇論文是否可信，另一個協助快速吸收內容並產生主動回憶練習。",
+    "educatorSummary": "claude-paper-tools 將單篇論文閱讀拆成兩個任務：/paper-review 聚焦 journal club 等級的可信度評讀，包含期刊與作者查核、CrossRef 引用存在性檢查、依研究設計選擇偏差風險工具、spin 與論證結構稽核，以及以程式重新計算的 GRADE；/paper-digest 則用三層漸進揭露方式整理論文內容，並在最後產生主動回憶卡。它適合醫學、實證研究、研究方法或論文讀書會課程，用來訓練學生把「這篇說了什麼」和「這篇能不能信」分開處理。",
+    "authorName": "drpwchen",
+    "authorGitHub": "drpwchen",
+    "repo": "drpwchen/claude-paper-tools",
+    "homepage": "https://drpwchen.com/posts/paper-tools/",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "paper-review",
+      "evidence-based-medicine"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "在 journal club 或研究生讀書會中建立單篇論文評讀流程與證據品質討論框架",
+      "示範如何把 GRADE、偏差風險、引用查核與論證缺口檢查結合到 AI 輔助閱讀",
+      "協助學生用 digest 模式快速掌握全文重點，再用 review 模式進行批判性評估"
+    ],
+    "cautions": [
+      "這是結構化第二讀者，不是醫療建議，也不能取代研究者或臨床教師親自閱讀原文",
+      "/paper-digest 強調需要全文，不能只靠摘要產生看似完整的整理",
+      "CrossRef、作者、引用與 PubPeer 等查核若失敗，應視為待補缺口而不是沒有問題"
+    ],
+    "language": "Python",
+    "install": "依 README 將 paper-review/ 與 paper-digest/ 放入 ~/.claude/skills/，複製 paper-review/config.example.yaml 為 config.yaml 並依需要填入 vault、全文取得、review-card site 或臨床 persona 等設定。完成後可在 Claude Code 中使用 /paper-review <DOI> 或 /paper-digest <DOI>。",
+    "license": "MIT",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/claude-paper-tools.yaml",
+    "stars": 25,
+    "forks": 4,
+    "lastPushedAt": "2026-07-10T08:01:12Z",
+    "repoUrl": "https://github.com/drpwchen/claude-paper-tools",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/55537221?v=4"
   },
   {
     "name": "ClassPop 課堂即時回答系統",

@@ -1,0 +1,46 @@
+---
+name: Academic Research Skills
+authorName: Imbad0202
+authorGitHub: Imbad0202
+repo: Imbad0202/academic-research-skills
+homepage: https://buymeacoffee.com/crucify020v
+launchUrl:
+tags:
+  - education
+  - teaching
+  - github
+  - research
+  - academic-writing
+  - literature-review
+educationLevels:
+  - 研究
+language: Python
+license: CC BY-NC 4.0
+submittedAt: "2026-07-11"
+---
+
+# Academic Research Skills
+
+## 簡短描述
+
+為 Claude Code 設計的學術研究技能套件，涵蓋研究規劃、文獻回顧、寫作、審查、修訂到定稿的完整流程。
+
+## 教育工作者摘要
+
+Academic Research Skills 是一套面向研究工作流的 Claude Code skills，強調 human-in-the-loop，而不是全自動代寫論文。它把研究任務拆成規劃、文獻搜尋、寫作、品質檢查、審查、修訂與輸出等階段，並加入引用查核、邏輯一致性、資料完整性與 AI 研究常見失誤檢查。對研究生訓練、學術寫作課程或研究方法工作坊而言，它適合示範如何讓 AI 承擔繁瑣檢查與格式工作，同時保留研究者在問題定義、方法選擇、資料詮釋與論點形成上的主導權。
+
+## 教學用途
+
+- 在研究方法或論文寫作課程中示範從研究計畫到定稿的 AI 協作流程
+- 協助學生建立文獻回顧、引用檢查、邏輯一致性檢查與修訂迭代的工作習慣
+- 作為討論 AI 輔助研究倫理、人工把關與自動化失誤風險的實作案例
+
+## 導入注意
+
+- 此工具定位是研究輔助與品質檢查，不應替代研究者的判斷、寫作責任或 AI 使用揭露
+- 產出的引用、方法建議、審查意見與修訂內容仍需由研究者逐項查證
+- 部分功能需要 Claude Code、API key、Pandoc、TeX 或 Python 等環境，課堂導入前宜先完成環境測試
+
+## 啟動或安裝方式
+
+README 建議使用 Claude Code plugin 指令安裝：先加入 marketplace，再安裝 academic-research-skills。安裝後可從 /ars-plan 開始規劃論文結構，或用 /ars-lit-review 測試文獻回顧流程；若使用 Codex，README 指向另有 Codex-native 包裝的 sibling distribution。

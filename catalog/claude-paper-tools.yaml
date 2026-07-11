@@ -1,0 +1,31 @@
+name: paper-review + paper-digest
+description: 兩個 Claude Code 論文閱讀 skills：一個評估單篇論文是否可信，另一個協助快速吸收內容並產生主動回憶練習。
+educatorSummary: |
+  claude-paper-tools 將單篇論文閱讀拆成兩個任務：/paper-review 聚焦 journal club 等級的可信度評讀，包含期刊與作者查核、CrossRef 引用存在性檢查、依研究設計選擇偏差風險工具、spin 與論證結構稽核，以及以程式重新計算的 GRADE；/paper-digest 則用三層漸進揭露方式整理論文內容，並在最後產生主動回憶卡。它適合醫學、實證研究、研究方法或論文讀書會課程，用來訓練學生把「這篇說了什麼」和「這篇能不能信」分開處理。
+authorName: drpwchen
+authorGitHub: drpwchen
+repo: drpwchen/claude-paper-tools
+homepage: https://drpwchen.com/posts/paper-tools/
+launchUrl: 
+tags:
+  - education
+  - teaching
+  - github
+  - research
+  - paper-review
+  - evidence-based-medicine
+educationLevels:
+  - 研究
+useCases:
+  - 在 journal club 或研究生讀書會中建立單篇論文評讀流程與證據品質討論框架
+  - 示範如何把 GRADE、偏差風險、引用查核與論證缺口檢查結合到 AI 輔助閱讀
+  - 協助學生用 digest 模式快速掌握全文重點，再用 review 模式進行批判性評估
+cautions:
+  - 這是結構化第二讀者，不是醫療建議，也不能取代研究者或臨床教師親自閱讀原文
+  - /paper-digest 強調需要全文，不能只靠摘要產生看似完整的整理
+  - CrossRef、作者、引用與 PubPeer 等查核若失敗，應視為待補缺口而不是沒有問題
+language: Python
+install: |
+  依 README 將 paper-review/ 與 paper-digest/ 放入 ~/.claude/skills/，複製 paper-review/config.example.yaml 為 config.yaml 並依需要填入 vault、全文取得、review-card site 或臨床 persona 等設定。完成後可在 Claude Code 中使用 /paper-review <DOI> 或 /paper-digest <DOI>。
+license: MIT
+submittedAt: "2026-07-11"
