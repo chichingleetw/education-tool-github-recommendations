@@ -49,6 +49,18 @@ a:hover {
   text-transform: uppercase;
 }
 
+.titleRow {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
+  align-items: center;
+}
+
+.siteLogo {
+  width: auto;
+  height: clamp(2.2rem, 7vw, 5rem);
+  object-fit: contain;
+}
+
 h1 {
   margin: 0;
   font-size: clamp(2.2rem, 7vw, 5rem);
