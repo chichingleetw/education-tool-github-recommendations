@@ -69,10 +69,14 @@ h1 {
 }
 
 .intro {
-  max-width: 760px;
-  margin: 16px 0 0;
+  width: 100%;
+  max-width: none;
+  margin: 10px 0 0;
   color: #4a5963;
-  font-size: 1.03rem;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 .intro p {
@@ -80,7 +84,7 @@ h1 {
 }
 
 .intro p + p {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .levelQuickSelect {
