@@ -128,7 +128,7 @@ h1 {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(78px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   gap: 10px;
   min-width: 320px;
 }
@@ -333,15 +333,6 @@ select:focus,
   display: block;
 }
 
-.rating {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 5px;
-  min-width: 62px;
-  color: #b35318;
-}
-
 .favoriteButton {
   display: inline-flex;
   align-items: center;
@@ -362,10 +353,6 @@ select:focus,
 .favoriteButton.is-favorite {
   background: transparent;
   color: #c5244b;
-}
-
-.rating strong {
-  font-size: 1.05rem;
 }
 
 .cardDetails {

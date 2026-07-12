@@ -1,6 +1,6 @@
 # 教育工具 GitHub 推薦網站
 
-這是一個給教育工作者看的 GitHub 教育工具推薦網站。網站讀取 `list.txt` 的 GitHub repo 連結，從 GitHub API 與 README 取得專案資訊，整理成包含適用教育階段、教學用途、導入注意事項與 GitHub Stars 的推薦卡片。
+這是一個給教育工作者看的 GitHub 教育工具推薦網站。網站讀取 `list.txt` 的 GitHub repo 連結，從 GitHub API 與 README 取得專案資訊，整理成包含適用教育階段、教學用途與導入注意事項的推薦卡片。
 
 ## 本機使用
 
@@ -83,7 +83,7 @@ license: MIT
 submittedAt: "2026-07-07"
 ```
 
-Stars、forks、更新時間、repo URL 與 avatar 由 `scripts/enrich-catalog.mjs` 從 GitHub API 取得，不需要手動填寫。
+Forks、更新時間、repo URL 與 avatar 由 `scripts/enrich-catalog.mjs` 從 GitHub API 取得，不需要手動填寫。
 
 ## GitHub Pages
 

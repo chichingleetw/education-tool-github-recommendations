@@ -1,46 +1,5 @@
 [
   {
-    "name": "Academic Research Skills",
-    "description": "為 Claude Code 設計的學術研究技能套件，涵蓋研究規劃、文獻回顧、寫作、審查、修訂到定稿的完整流程。",
-    "educatorSummary": "Academic Research Skills 是一套面向研究工作流的 Claude Code skills，強調 human-in-the-loop，而不是全自動代寫論文。它把研究任務拆成規劃、文獻搜尋、寫作、品質檢查、審查、修訂與輸出等階段，並加入引用查核、邏輯一致性、資料完整性與 AI 研究常見失誤檢查。對研究生訓練、學術寫作課程或研究方法工作坊而言，它適合示範如何讓 AI 承擔繁瑣檢查與格式工作，同時保留研究者在問題定義、方法選擇、資料詮釋與論點形成上的主導權。",
-    "authorName": "Imbad0202",
-    "authorGitHub": "Imbad0202",
-    "repo": "Imbad0202/academic-research-skills",
-    "homepage": "https://buymeacoffee.com/crucify020v",
-    "launchUrl": "",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "research",
-      "academic-writing",
-      "literature-review"
-    ],
-    "educationLevels": [
-      "研究"
-    ],
-    "useCases": [
-      "在研究方法或論文寫作課程中示範從研究計畫到定稿的 AI 協作流程",
-      "協助學生建立文獻回顧、引用檢查、邏輯一致性檢查與修訂迭代的工作習慣",
-      "作為討論 AI 輔助研究倫理、人工把關與自動化失誤風險的實作案例"
-    ],
-    "cautions": [
-      "此工具定位是研究輔助與品質檢查，不應替代研究者的判斷、寫作責任或 AI 使用揭露",
-      "產出的引用、方法建議、審查意見與修訂內容仍需由研究者逐項查證",
-      "部分功能需要 Claude Code、API key、Pandoc、TeX 或 Python 等環境，課堂導入前宜先完成環境測試"
-    ],
-    "language": "Python",
-    "install": "README 建議使用 Claude Code plugin 指令安裝：先加入 marketplace，再安裝 academic-research-skills。安裝後可從 /ars-plan 開始規劃論文結構，或用 /ars-lit-review 測試文獻回顧流程；若使用 Codex，README 指向另有 Codex-native 包裝的 sibling distribution。",
-    "license": "CC BY-NC 4.0",
-    "submittedAt": "2026-07-11",
-    "sourcePath": "catalog/academic-research-skills.yaml",
-    "stars": 37401,
-    "forks": 3053,
-    "lastPushedAt": "2026-07-12T00:42:22Z",
-    "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/132531341?v=4"
-  },
-  {
     "name": "Academic Humanizer",
     "description": "協助研究者修整 AI 輔助產生的論文與計畫書草稿，去除空泛 AI 文風，同時保留作者聲音、數據、引用與學術精確性。",
     "educatorSummary": "Academic Humanizer 是一個面向論文與 NSF/NIH 等研究計畫書的 AI editing skill，可用於 Claude Code、Codex、MorphMind 或其他能讀取 SKILL.md 的代理工具。它聚焦在學術寫作中的清晰度、作者聲音與 claim-evidence 對齊，避免一般「humanizer」把學術精確措辭、引用或數據一起磨平。對研究方法、學術寫作或研究生訓練課程而言，它適合示範如何把 AI 產出的初稿轉成更可審閱、可追溯且符合學術語氣的版本。",
@@ -75,54 +34,211 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/academic-humanizer.yaml",
-    "stars": 364,
+    "stars": 377,
     "forks": 42,
     "lastPushedAt": "2026-07-03T07:58:33Z",
     "repoUrl": "https://github.com/AIScientists-Dev/academic-humanizer",
     "avatarUrl": "https://avatars.githubusercontent.com/u/226059021?v=4"
   },
   {
-    "name": "說人話 speak-human-tw",
-    "description": "繁體中文台灣語境的去 AI 味改寫 Skill，協助找出 AI 寫作痕跡並提出更自然的改稿建議。",
-    "educatorSummary": "說人話 speak-human-tw 是一個給 Claude Code、Codex、Cursor 與其他 AI agent 使用的繁體中文改稿 Skill，核心目標不是代寫，而是校對已存在的文字，抓出 AI 常見寫作痕跡、中國用語、半形標點與過度模板化的表達。它內建 35 種以上 AI 中文寫作痕跡、台灣在地化用語檢查、保護清單與誤殺防護，並採取先列問題、再由作者決定是否套用的工作流。適合研究生、教師與學術寫作者用來檢查 AI 輔助撰寫後的摘要、報告、投稿信、研究推廣文或課程公告，但最後的立場、經驗與語氣仍應由作者本人補回。",
-    "authorName": "Raymondhou0917",
-    "authorGitHub": "Raymondhou0917",
-    "repo": "Raymondhou0917/speak-human-tw",
-    "homepage": "",
+    "name": "Academic Research Skills",
+    "description": "為 Claude Code 設計的學術研究技能套件，涵蓋研究規劃、文獻回顧、寫作、審查、修訂到定稿的完整流程。",
+    "educatorSummary": "Academic Research Skills 是一套面向研究工作流的 Claude Code skills，強調 human-in-the-loop，而不是全自動代寫論文。它把研究任務拆成規劃、文獻搜尋、寫作、品質檢查、審查、修訂與輸出等階段，並加入引用查核、邏輯一致性、資料完整性與 AI 研究常見失誤檢查。對研究生訓練、學術寫作課程或研究方法工作坊而言，它適合示範如何讓 AI 承擔繁瑣檢查與格式工作，同時保留研究者在問題定義、方法選擇、資料詮釋與論點形成上的主導權。",
+    "authorName": "Imbad0202",
+    "authorGitHub": "Imbad0202",
+    "repo": "Imbad0202/academic-research-skills",
+    "homepage": "https://buymeacoffee.com/crucify020v",
     "launchUrl": "",
     "tags": [
       "education",
       "teaching",
       "github",
       "research",
-      "writing",
-      "ai-skill",
-      "traditional-chinese",
-      "humanizer"
+      "academic-writing",
+      "literature-review"
     ],
     "educationLevels": [
       "研究"
     ],
     "useCases": [
-      "在研究寫作或 AI 素養課程中示範如何辨識 AI 腔、模板句與空泛論述",
-      "協助學生檢查 AI 輔助生成的報告、摘要或簡報文字，保留事實並修正不自然表達",
-      "作為繁體中文台灣用語、標點與改稿流程的範例，討論人機協作中的作者責任"
+      "在研究方法或論文寫作課程中示範從研究計畫到定稿的 AI 協作流程",
+      "協助學生建立文獻回顧、引用檢查、邏輯一致性檢查與修訂迭代的工作習慣",
+      "作為討論 AI 輔助研究倫理、人工把關與自動化失誤風險的實作案例"
     ],
     "cautions": [
-      "工具定位是校對與改稿建議，不應替學生或研究者產生不存在的經驗、立場或故事",
-      "去 AI 味不等於提高內容品質，事實查核、論證強度與研究倫理仍需另外檢查",
-      "改稿建議可能不符合作者個人風格，正式交付前應由作者逐條取捨與人工確認"
+      "此工具定位是研究輔助與品質檢查，不應替代研究者的判斷、寫作責任或 AI 使用揭露",
+      "產出的引用、方法建議、審查意見與修訂內容仍需由研究者逐項查證",
+      "部分功能需要 Claude Code、API key、Pandoc、TeX 或 Python 等環境，課堂導入前宜先完成環境測試"
     ],
-    "language": "Markdown",
-    "install": "Claude Code 可將 repository clone 到 ~/.claude/skills/speak-human-tw；Codex 可 clone 專案後用 codex exec -C . 讀取 SKILL.md 並貼上要改寫的文字；Cursor 與其他平台可依 install/ 目錄文件設定。若只想先看問題不要直接改稿，可在指令中要求「先標問題不要改」。",
+    "language": "Python",
+    "install": "README 建議使用 Claude Code plugin 指令安裝：先加入 marketplace，再安裝 academic-research-skills。安裝後可從 /ars-plan 開始規劃論文結構，或用 /ars-lit-review 測試文獻回顧流程；若使用 Codex，README 指向另有 Codex-native 包裝的 sibling distribution。",
+    "license": "CC BY-NC 4.0",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/academic-research-skills.yaml",
+    "stars": 37458,
+    "forks": 3055,
+    "lastPushedAt": "2026-07-12T00:42:22Z",
+    "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/132531341?v=4"
+  },
+  {
+    "name": "ClassPop 課堂即時回答系統",
+    "description": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。",
+    "educatorSummary": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/classPop",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/classPop/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "課前評估工具功能是否符合課程需求",
+      "作為課堂活動、教學管理或學習輔助的候選工具",
+      "搭配 GitHub README 與原始碼了解部署方式"
+    ],
+    "cautions": [
+      "正式使用前請先小規模測試",
+      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
+      "正式導入前請先確認工具內容與課程需求相符"
+    ],
+    "language": "JavaScript",
+    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
+    "license": "MIT",
+    "submittedAt": "2026-07-10",
+    "sourcePath": "catalog/classpop.yaml",
+    "stars": 1,
+    "forks": 1,
+    "lastPushedAt": "2026-07-12T08:53:10Z",
+    "repoUrl": "https://github.com/educatres/classPop",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "GPS 定位實驗室",
+    "description": "以 3D 地球、衛星與測距球面示範 GPS 定位概念，讓學生調整衛星位置與距離完成目標解算。",
+    "educatorSummary": "GPS 定位實驗室是 Classroom Lab tzk 工具集中的互動式 3D 地理與科學教具。學生可以在地球場景中調整衛星數量、經緯度與目標距離，觀察多個測距球面如何交會並推估目標位置。工具也提供半同步軌道、地球同步軌道與地球靜止軌道等教學內容，適合用來建立「定位需要多個距離約束」、「衛星幾何會影響解算」與「經緯度、海拔共同構成立體位置」等概念。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/gps_3d/gps_3d.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "geography",
+      "gps",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在地理、自然科學或科技課程中說明 GPS 定位與三維座標概念",
+      "讓學生調整衛星數量與位置，觀察測距球面交會對定位結果的影響",
+      "搭配地球同步軌道、衛星通訊或定位誤差主題進行跨域討論"
+    ],
+    "cautions": [
+      "模型是教育用視覺化，不代表真實 GPS 接收器的訊號處理、誤差校正與演算法細節",
+      "建議教師先示範一組可成功解算的衛星配置，再讓學生自由嘗試",
+      "若延伸到真實衛星定位，需補充大氣延遲、時鐘誤差、座標系與接收器限制"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的 GPS 定位實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 gps_3d/gps_3d.html。",
+    "license": "MIT",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/classroom-lab-gps-3d.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "paper-review + paper-digest",
+    "description": "兩個 Claude Code 論文閱讀 skills：一個評估單篇論文是否可信，另一個協助快速吸收內容並產生主動回憶練習。",
+    "educatorSummary": "claude-paper-tools 將單篇論文閱讀拆成兩個任務：/paper-review 聚焦 journal club 等級的可信度評讀，包含期刊與作者查核、CrossRef 引用存在性檢查、依研究設計選擇偏差風險工具、spin 與論證結構稽核，以及以程式重新計算的 GRADE；/paper-digest 則用三層漸進揭露方式整理論文內容，並在最後產生主動回憶卡。它適合醫學、實證研究、研究方法或論文讀書會課程，用來訓練學生把「這篇說了什麼」和「這篇能不能信」分開處理。",
+    "authorName": "drpwchen",
+    "authorGitHub": "drpwchen",
+    "repo": "drpwchen/claude-paper-tools",
+    "homepage": "https://drpwchen.com/posts/paper-tools/",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "paper-review",
+      "evidence-based-medicine"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "在 journal club 或研究生讀書會中建立單篇論文評讀流程與證據品質討論框架",
+      "示範如何把 GRADE、偏差風險、引用查核與論證缺口檢查結合到 AI 輔助閱讀",
+      "協助學生用 digest 模式快速掌握全文重點，再用 review 模式進行批判性評估"
+    ],
+    "cautions": [
+      "這是結構化第二讀者，不是醫療建議，也不能取代研究者或臨床教師親自閱讀原文",
+      "/paper-digest 強調需要全文，不能只靠摘要產生看似完整的整理",
+      "CrossRef、作者、引用與 PubPeer 等查核若失敗，應視為待補缺口而不是沒有問題"
+    ],
+    "language": "Python",
+    "install": "依 README 將 paper-review/ 與 paper-digest/ 放入 ~/.claude/skills/，複製 paper-review/config.example.yaml 為 config.yaml 並依需要填入 vault、全文取得、review-card site 或臨床 persona 等設定。完成後可在 Claude Code 中使用 /paper-review <DOI> 或 /paper-digest <DOI>。",
     "license": "MIT",
     "submittedAt": "2026-07-11",
-    "sourcePath": "catalog/speak-human-tw.yaml",
-    "stars": 309,
-    "forks": 43,
-    "lastPushedAt": "2026-07-11T03:57:33Z",
-    "repoUrl": "https://github.com/Raymondhou0917/speak-human-tw",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/14795468?v=4"
+    "sourcePath": "catalog/claude-paper-tools.yaml",
+    "stars": 26,
+    "forks": 4,
+    "lastPushedAt": "2026-07-10T08:01:12Z",
+    "repoUrl": "https://github.com/drpwchen/claude-paper-tools",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/55537221?v=4"
+  },
+  {
+    "name": "Prompt Lab",
+    "description": "以提問能力為核心的 AI 素養學習工具，引導學生拆解問題、設定情境、比較回答並修正提示語。",
+    "educatorSummary": "Prompt Lab 是一套以「提問能力」為核心的 AI 素養學習工具，專為課堂教學與學生自主探究而設計。它引導學生練習拆解問題、設定情境、補充條件、比較答案並逐步修正提示語，讓學生從單純把問題交給 AI，進一步學會引導 AI 協助思考。教師可將它用於 AI 素養課程、跨領域探究、寫作訓練、專題研究或邏輯思辨活動，帶學生討論問題是否明確、條件是否足夠，以及 AI 回答是否合理。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/promptLab",
+    "homepage": "",
+    "launchUrl": "https://air.cgu.edu.tw/workspace3/PromptLab/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "AI 素養課程中練習提示語設計、追問與修正",
+      "跨領域探究或專題研究時協助學生拆解問題與補充條件",
+      "寫作訓練或邏輯思辨活動中比較 AI 回答並檢查推論品質"
+    ],
+    "cautions": [
+      "應要求學生保留自己的提問與修正歷程，避免只提交 AI 產出的答案",
+      "若活動會輸入個人資料、作品或研究素材，需先確認隱私與校內資訊安全規範",
+      "AI 回答仍需人工判讀與查證，適合做為思考輔助而非唯一資料來源"
+    ],
+    "language": "Unknown",
+    "install": "可依 README 連結進入線上版本使用：https://air.cgu.edu.tw/workspace3/PromptLab/。若要自行部署或改作課堂版本，請先閱讀 GitHub 專案內容並在測試環境確認權限、資料處理與瀏覽器相容性。",
+    "license": "MIT",
+    "submittedAt": "2026-07-08",
+    "sourcePath": "catalog/promptlab.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T00:48:25Z",
+    "repoUrl": "https://github.com/educatres/promptLab",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
     "name": "ScholarSkill",
@@ -166,45 +282,47 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/118050627?v=4"
   },
   {
-    "name": "paper-review + paper-digest",
-    "description": "兩個 Claude Code 論文閱讀 skills：一個評估單篇論文是否可信，另一個協助快速吸收內容並產生主動回憶練習。",
-    "educatorSummary": "claude-paper-tools 將單篇論文閱讀拆成兩個任務：/paper-review 聚焦 journal club 等級的可信度評讀，包含期刊與作者查核、CrossRef 引用存在性檢查、依研究設計選擇偏差風險工具、spin 與論證結構稽核，以及以程式重新計算的 GRADE；/paper-digest 則用三層漸進揭露方式整理論文內容，並在最後產生主動回憶卡。它適合醫學、實證研究、研究方法或論文讀書會課程，用來訓練學生把「這篇說了什麼」和「這篇能不能信」分開處理。",
-    "authorName": "drpwchen",
-    "authorGitHub": "drpwchen",
-    "repo": "drpwchen/claude-paper-tools",
-    "homepage": "https://drpwchen.com/posts/paper-tools/",
-    "launchUrl": "",
+    "name": "Simple Knowledge Chatbot",
+    "description": "可部署到 GitHub Pages 的純前端 AI 聊天機器人，支援教師用自己的 API key 建立課堂臨時聊天頁。",
+    "educatorSummary": "Simple Knowledge Chatbot 是一個不需要後端伺服器或資料庫的純前端 AI 聊天工具，支援 CGU、OpenAI、Google AI Studio 與 Claude API。教師可以輸入自己的 API key、模型與 system prompt，產生學生可直接開啟的網址與 QR Code，讓沒有 AI 帳號或電子信箱的學生也能在課堂活動中使用 AI。工具也支援上傳 .txt 或 .md 知識庫檔案，在瀏覽器端切段後讓 AI 優先根據指定資料回答，適合短期課堂活動、工作坊展示與臨時 AI 學習任務。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/simpleKnowledgeChatbot",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/simpleKnowledgeChatbot/",
     "tags": [
       "education",
       "teaching",
       "github",
-      "research",
-      "paper-review",
-      "evidence-based-medicine"
+      "chatbot",
+      "ai",
+      "knowledge-base",
+      "classroom"
     ],
     "educationLevels": [
-      "研究"
+      "中小學",
+      "高中"
     ],
     "useCases": [
-      "在 journal club 或研究生讀書會中建立單篇論文評讀流程與證據品質討論框架",
-      "示範如何把 GRADE、偏差風險、引用查核與論證缺口檢查結合到 AI 輔助閱讀",
-      "協助學生用 digest 模式快速掌握全文重點，再用 review 模式進行批判性評估"
+      "教師快速建立課堂共用 AI 聊天頁，讓學生掃 QR Code 即可進入活動",
+      "搭配 system prompt 設定特定角色、任務規則或課程情境，進行提問、討論與反思",
+      "上傳文字知識庫後，引導學生比較一般回答與依指定資料回答的差異"
     ],
     "cautions": [
-      "這是結構化第二讀者，不是醫療建議，也不能取代研究者或臨床教師親自閱讀原文",
-      "/paper-digest 強調需要全文，不能只靠摘要產生看似完整的整理",
-      "CrossRef、作者、引用與 PubPeer 等查核若失敗，應視為待補缺口而不是沒有問題"
+      "若 API key 放在網址中，可能出現在瀏覽器歷史、截圖、投影片或分享紀錄，課後應立即更換或註銷",
+      "知識庫檔案只在使用者瀏覽器讀取，不會隨自動產生的學生網址傳給其他裝置",
+      "提問、system prompt 與相關知識片段會送往所選 AI API，請勿放入敏感個資、機密資料或不適合交給第三方服務的內容"
     ],
-    "language": "Python",
-    "install": "依 README 將 paper-review/ 與 paper-digest/ 放入 ~/.claude/skills/，複製 paper-review/config.example.yaml 為 config.yaml 並依需要填入 vault、全文取得、review-card site 或臨床 persona 等設定。完成後可在 Claude Code 中使用 /paper-review <DOI> 或 /paper-digest <DOI>。",
-    "license": "MIT",
-    "submittedAt": "2026-07-11",
-    "sourcePath": "catalog/claude-paper-tools.yaml",
-    "stars": 26,
-    "forks": 4,
-    "lastPushedAt": "2026-07-10T08:01:12Z",
-    "repoUrl": "https://github.com/drpwchen/claude-paper-tools",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/55537221?v=4"
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 線上版本使用。若要本機使用，可下載專案後直接開啟 index.html，或在專案根目錄執行 python3 -m http.server 8000 後開啟 http://localhost:8000。部署到 GitHub Pages 時，將 index.html、styles.css、app.js 與 README.md 放在 repository 根目錄並啟用 Pages。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/simple-knowledge-chatbot.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T13:36:39Z",
+    "repoUrl": "https://github.com/educatres/simpleKnowledgeChatbot",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
     "name": "VoxPen Desktop 語墨桌面版",
@@ -249,86 +367,6 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/4186736?v=4"
   },
   {
-    "name": "ClassPop 課堂即時回答系統",
-    "description": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。",
-    "educatorSummary": "這是一個可部署在 GitHub Pages 的靜態上課回答系統。資料寫入使用 Google Form，資料讀取使用公開 Google Sheet，不需要後端、Apps Script、OAuth 或學生登入。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/classPop",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/classPop/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "課前評估工具功能是否符合課程需求",
-      "作為課堂活動、教學管理或學習輔助的候選工具",
-      "搭配 GitHub README 與原始碼了解部署方式"
-    ],
-    "cautions": [
-      "正式使用前請先小規模測試",
-      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
-    ],
-    "language": "JavaScript",
-    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    "license": "MIT",
-    "submittedAt": "2026-07-10",
-    "sourcePath": "catalog/classpop.yaml",
-    "stars": 1,
-    "forks": 1,
-    "lastPushedAt": "2026-07-12T01:19:04Z",
-    "repoUrl": "https://github.com/educatres/classPop",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "GPS 定位實驗室",
-    "description": "以 3D 地球、衛星與測距球面示範 GPS 定位概念，讓學生調整衛星位置與距離完成目標解算。",
-    "educatorSummary": "GPS 定位實驗室是 Classroom Lab tzk 工具集中的互動式 3D 地理與科學教具。學生可以在地球場景中調整衛星數量、經緯度與目標距離，觀察多個測距球面如何交會並推估目標位置。工具也提供半同步軌道、地球同步軌道與地球靜止軌道等教學內容，適合用來建立「定位需要多個距離約束」、「衛星幾何會影響解算」與「經緯度、海拔共同構成立體位置」等概念。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/gps_3d/gps_3d.html",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "geography",
-      "gps",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在地理、自然科學或科技課程中說明 GPS 定位與三維座標概念",
-      "讓學生調整衛星數量與位置，觀察測距球面交會對定位結果的影響",
-      "搭配地球同步軌道、衛星通訊或定位誤差主題進行跨域討論"
-    ],
-    "cautions": [
-      "模型是教育用視覺化，不代表真實 GPS 接收器的訊號處理、誤差校正與演算法細節",
-      "建議教師先示範一組可成功解算的衛星配置，再讓學生自由嘗試",
-      "若延伸到真實衛星定位，需補充大氣延遲、時鐘誤差、座標系與接收器限制"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 的 GPS 定位實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 gps_3d/gps_3d.html。",
-    "license": "MIT",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/classroom-lab-gps-3d.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
     "name": "三角函數實驗室",
     "description": "用單位圓、Magic Hexagon 與六個週期波形探索廣義角、同界角與六種三角函數。",
     "educatorSummary": "三角函數實驗室是 Classroom Lab tzk 的數學互動頁，學生可以拖曳單位圓上的點或用鍵盤改變廣義角，並在度度量與徑度量之間切換。工具同步顯示同界角公式、座標投影、sin、cos、tan、cot、sec、csc 的函數值、Magic Hexagon 關係與六張週期圖。它適合把單位圓定義、特殊角、倒數關係、平方關係與週期性整合在同一個可操作畫面中。",
@@ -366,7 +404,7 @@
     "sourcePath": "catalog/classroom-lab-trig-functions.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
+    "lastPushedAt": "2026-07-12T14:17:27Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -395,7 +433,7 @@
     "cautions": [
       "正式使用前請先小規模測試",
       "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
+      "正式導入前請先確認工具內容與課程需求相符"
     ],
     "language": "JavaScript",
     "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
@@ -404,447 +442,8 @@
     "sourcePath": "catalog/classboard.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T01:23:00Z",
+    "lastPushedAt": "2026-07-12T12:59:27Z",
     "repoUrl": "https://github.com/educatres/classboard",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "拋體運動實驗室",
-    "description": "以互動式方格紙示範水平地表拋體運動，呈現初速分量、飛行時間、水平位移與最高點高度。",
-    "educatorSummary": "拋體運動實驗室是 Classroom Lab tzk 中的物理模擬頁，可調整初速、發射角與發射點高度，並以固定水平地表 y = 0 展示拋物線軌跡。工具會把 V0 分解為 Vx 與 Vy，並在解算結果區逐卡呈現水平初速度、垂直初速度、飛行時間、最高點時間、水平位移與最高點垂直位移。它適合讓學生連結公式、向量分解與動畫軌跡，理解水平等速與垂直等加速度如何共同形成拋體運動。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/projectilemotion/projectilemotion.html",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "physics",
-      "projectile-motion",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在國中自然科或高中物理入門中示範拋體運動的水平與垂直分解",
-      "讓學生改變初速、角度或發射高度，預測飛行時間、射程與最高點變化",
-      "搭配公式卡討論 v = v0 + at、x = v0t + 1/2at^2 與 v^2 = v0^2 + 2ax 的代入方式"
-    ],
-    "cautions": [
-      "模型採水平地表與理想化重力，不包含空氣阻力、風或真實投擲姿態",
-      "建議學生每次只改變一個參數，否則難以判讀初速、角度與高度的個別影響",
-      "公式推導仍需教師引導，避免學生只記結果卡而未理解水平與垂直方向的差異"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 的拋體運動實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 projectilemotion/projectilemotion.html。",
-    "license": "MIT",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/classroom-lab-projectile-motion.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "探真拓知酷—自然組",
-    "description": "為科學課堂打造、以 GitHub Pages 發布的純前端互動實驗工具集。",
-    "educatorSummary": "以 GitHub Pages 發布的純前端互動教學工具集。根目錄 index.html 是所有工具的入口；各項實驗則以獨立子資料夾維護，方便持續加入新的課堂功能。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "課前評估工具功能是否符合課程需求",
-      "作為課堂活動、教學管理或學習輔助的候選工具",
-      "搭配 GitHub README 與原始碼了解部署方式"
-    ],
-    "cautions": [
-      "正式使用前請先小規模測試",
-      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
-    ],
-    "language": "JavaScript",
-    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-10",
-    "sourcePath": "catalog/classroom-lab-tzk.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "探真拓知酷—通用工具 Classroom Timer tzk",
-    "description": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。",
-    "educatorSummary": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-timer-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "課前評估工具功能是否符合課程需求",
-      "作為課堂活動、教學管理或學習輔助的候選工具",
-      "搭配 GitHub README 與原始碼了解部署方式"
-    ],
-    "cautions": [
-      "正式使用前請先小規模測試",
-      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
-    ],
-    "language": "JavaScript",
-    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    "license": "MIT",
-    "submittedAt": "2026-07-09",
-    "sourcePath": "catalog/classroom-timer-tzk.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-11T10:45:13Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "數字系統研究室",
-    "description": "以同步面板展示同一個 32-bit 整數的十進位、十六進位、八進位與二進位表示。",
-    "educatorSummary": "數字系統研究室是 Classroom Lab tzk 的資訊與數學概念工具，使用四個同步面板呈現同一個 32-bit 整數在 10、16、8、2 進位中的表示方式。每個面板提供機械式撥盤、直接輸入、加一、減一、最大值與重設操作，並以 ERR、OVF、NEG 燈號提示輸入錯誤、溢位與負數狀態。它適合讓學生理解位值、進位轉換、unsigned 32-bit 與 two's complement 補數表示。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/son/son.html",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "computer-science",
-      "number-systems",
-      "binary",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在資訊科技或數學課中說明二進位、八進位、十六進位與十進位的轉換",
-      "讓學生操作同一數值在不同進位制中的同步變化，理解位值與分組",
-      "搭配負數補數、整數溢位與資料表示單元，討論電腦如何儲存整數"
-    ],
-    "cautions": [
-      "工具聚焦 32-bit 整數表示，不等同於所有程式語言或硬體平台的數值行為",
-      "初學者容易混淆 signed 與 unsigned，建議教師先用小數值與邊界值示範",
-      "溢位與補數概念較抽象，適合搭配紙筆換算或位元卡片活動加深理解"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 的數字系統研究室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 son/son.html。",
-    "license": "MIT",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/classroom-lab-number-systems.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "無邊際白板 Infinite Whiteboard",
-    "description": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。",
-    "educatorSummary": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/infinite-whiteboard",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/infinite-whiteboard/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "課前評估工具功能是否符合課程需求",
-      "作為課堂活動、教學管理或學習輔助的候選工具",
-      "搭配 GitHub README 與原始碼了解部署方式"
-    ],
-    "cautions": [
-      "正式使用前請先小規模測試",
-      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
-    ],
-    "language": "HTML",
-    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-09",
-    "sourcePath": "catalog/infinite-whiteboard.yaml",
-    "stars": 1,
-    "forks": 1,
-    "lastPushedAt": "2026-07-10T12:18:06Z",
-    "repoUrl": "https://github.com/educatres/infinite-whiteboard",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "聽眾舉手統計",
-    "description": "透過瀏覽器鏡頭與視覺模型統計現場聽眾人數、舉手人數與舉手比例，協助教師掌握互動回應。",
-    "educatorSummary": "這是一個可直接在瀏覽器開啟的單頁工具，可連接攝影機並呼叫視覺模型 API，手動或定時統計現場聽眾總人數、舉手人數與比例。它適合在講座、課堂提問、即時投票或大型活動中快速掌握群體回應，但仍應把結果視為輔助觀察資料，而非個別學生表現判定。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/hand-raise-counter",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/hand-raise-counter/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "課堂提問後快速估計整體舉手回應比例",
-      "講座或工作坊中投影全螢幕儀表板，輔助主持人掌握互動狀況",
-      "比較不同活動段落的參與度變化，作為課後教學反思資料"
-    ],
-    "cautions": [
-      "使用攝影機前需透明告知並取得必要同意",
-      "統計結果可能受拍攝角度、遮擋與模型判斷影響，應以人工觀察輔助確認",
-      "API key 需由使用者自行保管，並確認影像傳輸符合校內資料保護規範"
-    ],
-    "language": "HTML",
-    "install": "使用 Chrome 或 Edge 開啟 舉手統計.html，允許攝影機權限後選擇 API 服務並填入 API key 或 Bearer token。若直接開啟檔案遇到瀏覽器安全限制，可改用本機靜態伺服器提供檔案。",
-    "license": "MIT",
-    "submittedAt": "2026-07-07",
-    "sourcePath": "catalog/hand-raise-counter.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T00:48:23Z",
-    "repoUrl": "https://github.com/educatres/hand-raise-counter",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "課堂聽眾專注度分析",
-    "description": "透過瀏覽器鏡頭與視覺模型觀察課堂整體專注趨勢，協助教師掌握聽眾狀態。",
-    "educatorSummary": "這是一個單檔網頁工具，可在課堂中定時擷取畫面並呼叫支援 Responses API 的視覺模型，估算總人數、疑似不專心人數、手機使用比例與趨勢。它適合做為教師調整課堂節奏、觀察群體參與狀態與課後反思的輔助資料，不應用於個人評分、紀律處分或身分辨識。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/audience-analysis",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/audience-analysis/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "大型課堂或講座中快速掌握整體注意力變化",
-      "教師研習時示範 AI 視覺模型在教學觀察上的可能性",
-      "課後回顧不同教學段落的群體參與趨勢"
-    ],
-    "cautions": [
-      "使用攝影機前需透明告知並取得必要同意",
-      "分析結果僅供群體觀察參考，不應用於個人評分或懲處",
-      "影像會送到使用者設定的 API endpoint，需確認資料保護與校內規範"
-    ],
-    "language": "HTML",
-    "install": "下載或 clone 專案後，建議用 python3 -m http.server 8000 啟動本機 HTTP server，再開啟 聽眾分析.html。使用前需準備可用攝影機與支援影像輸入的 API key。",
-    "license": "MIT",
-    "submittedAt": "2026-07-07",
-    "sourcePath": "catalog/audience-analysis.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T00:43:22Z",
-    "repoUrl": "https://github.com/educatres/audience-analysis",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "軌道觀測站",
-    "description": "同步操作地日公轉、月地相位、月相事件與季節溫度的 3D 天文教學模型。",
-    "educatorSummary": "軌道觀測站是 Classroom Lab tzk 的天文與地球科學互動工具，日期範圍涵蓋 2025 至 2026 年，可用年月日選單、滑桿與按鈕同步控制地日場景、月地場景、月相、事件清單與季節溫度。工具以 Three.js 展示地軸傾角、近日點遠日點、二分二至、月相幾何、日月蝕樣本、流星雨與彗星教學動態，並以臺北為觀測基準呈現月相與季節訊號。它適合用來把抽象的軌道、月相、季節與觀測條件放在同一時間軸上比較。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/ogo/ogo.html",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "astronomy",
-      "seasons",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在自然科學或地球科學課程中說明地日公轉、地軸傾角、季節與月相",
-      "讓學生改變日期，觀察月相、日月蝕樣本、流星雨或彗星事件如何接近或遠離",
-      "搭配臺北與其他城市的季節溫度訊號，討論緯度、季節與資料模型限制"
-    ],
-    "cautions": [
-      "軌道、天體大小、距離、農曆與溫度都是教育模型，不代表精密天文曆或氣象預報",
-      "部分氣溫缺漏會透過 Open-Meteo 補值，教學時需說明資料來源與再分析或預報的限制",
-      "事件清單是樣本資料，適合概念教學，不應取代實際觀測前的天文台或氣象資訊查詢"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 的軌道觀測站頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 ogo/ogo.html。",
-    "license": "MIT",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/classroom-lab-orbit-observatory.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "透鏡成像實驗室",
-    "description": "用互動式光線圖示範凸透鏡與凹透鏡成像，呈現焦距、物距、像距、放大率與成像性質。",
-    "educatorSummary": "透鏡成像實驗室是 Classroom Lab tzk 的光學教學頁，學生可以切換凸透鏡與凹透鏡，並用焦距倍數調整物距。畫面以 SVG 即時繪製光軸、焦點、物體、像的位置與三條主光線，實線與虛線分別表示實際光線與反向延長線，並以不同顏色呈現實像與虛像。右側面板同步顯示焦距、物距、像距、放大率、成像類型、方向與位置，適合用來把薄透鏡公式和光線作圖連在一起。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-lab-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/lens/lens.html",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "optics",
-      "lens",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在光學單元中示範凸透鏡、凹透鏡與焦距位置對成像的影響",
-      "讓學生拖曽物距，觀察實像、虛像、正立、倒立與放大率如何改變",
-      "搭配實驗器材或作圖練習，檢查薄透鏡公式與三條主光線的對應關係"
-    ],
-    "cautions": [
-      "工具使用薄透鏡近似，不處理像差、厚透鏡、光圈大小或真實鏡片材質差異",
-      "當成像位置超出畫面時需引導學生依提示判讀方向，而不是誤以為沒有成像",
-      "建議搭配手繪光線圖活動，避免學生只看動畫而未掌握作圖邏輯"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 的透鏡成像實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 lens/lens.html。",
-    "license": "MIT",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/classroom-lab-lens.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:08:20Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "Prompt Lab",
-    "description": "以提問能力為核心的 AI 素養學習工具，引導學生拆解問題、設定情境、比較回答並修正提示語。",
-    "educatorSummary": "Prompt Lab 是一套以「提問能力」為核心的 AI 素養學習工具，專為課堂教學與學生自主探究而設計。它引導學生練習拆解問題、設定情境、補充條件、比較答案並逐步修正提示語，讓學生從單純把問題交給 AI，進一步學會引導 AI 協助思考。教師可將它用於 AI 素養課程、跨領域探究、寫作訓練、專題研究或邏輯思辨活動，帶學生討論問題是否明確、條件是否足夠，以及 AI 回答是否合理。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/promptLab",
-    "homepage": "",
-    "launchUrl": "https://air.cgu.edu.tw/workspace3/PromptLab/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "AI 素養課程中練習提示語設計、追問與修正",
-      "跨領域探究或專題研究時協助學生拆解問題與補充條件",
-      "寫作訓練或邏輯思辨活動中比較 AI 回答並檢查推論品質"
-    ],
-    "cautions": [
-      "應要求學生保留自己的提問與修正歷程，避免只提交 AI 產出的答案",
-      "若活動會輸入個人資料、作品或研究素材，需先確認隱私與校內資訊安全規範",
-      "AI 回答仍需人工判讀與查證，適合做為思考輔助而非唯一資料來源"
-    ],
-    "language": "Unknown",
-    "install": "可依 README 連結進入線上版本使用：https://air.cgu.edu.tw/workspace3/PromptLab/。若要自行部署或改作課堂版本，請先閱讀 GitHub 專案內容並在測試環境確認權限、資料處理與瀏覽器相容性。",
-    "license": "MIT",
-    "submittedAt": "2026-07-08",
-    "sourcePath": "catalog/promptlab.yaml",
-    "stars": 0,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T00:48:25Z",
-    "repoUrl": "https://github.com/educatres/promptLab",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "Simple Knowledge Chatbot",
-    "description": "可部署到 GitHub Pages 的純前端 AI 聊天機器人，支援教師用自己的 API key 建立課堂臨時聊天頁。",
-    "educatorSummary": "Simple Knowledge Chatbot 是一個不需要後端伺服器或資料庫的純前端 AI 聊天工具，支援 CGU、OpenAI、Google AI Studio 與 Claude API。教師可以輸入自己的 API key、模型與 system prompt，產生學生可直接開啟的網址與 QR Code，讓沒有 AI 帳號或電子信箱的學生也能在課堂活動中使用 AI。工具也支援上傳 .txt 或 .md 知識庫檔案，在瀏覽器端切段後讓 AI 優先根據指定資料回答，適合短期課堂活動、工作坊展示與臨時 AI 學習任務。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/simpleKnowledgeChatbot",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/simpleKnowledgeChatbot/",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "chatbot",
-      "ai",
-      "knowledge-base",
-      "classroom"
-    ],
-    "educationLevels": [
-      "中小學",
-      "高中"
-    ],
-    "useCases": [
-      "教師快速建立課堂共用 AI 聊天頁，讓學生掃 QR Code 即可進入活動",
-      "搭配 system prompt 設定特定角色、任務規則或課程情境，進行提問、討論與反思",
-      "上傳文字知識庫後，引導學生比較一般回答與依指定資料回答的差異"
-    ],
-    "cautions": [
-      "若 API key 放在網址中，可能出現在瀏覽器歷史、截圖、投影片或分享紀錄，課後應立即更換或註銷",
-      "知識庫檔案只在使用者瀏覽器讀取，不會隨自動產生的學生網址傳給其他裝置",
-      "提問、system prompt 與相關知識片段會送往所選 AI API，請勿放入敏感個資、機密資料或不適合交給第三方服務的內容"
-    ],
-    "language": "JavaScript",
-    "install": "可直接開啟 GitHub Pages 線上版本使用。若要本機使用，可下載專案後直接開啟 index.html，或在專案根目錄執行 python3 -m http.server 8000 後開啟 http://localhost:8000。部署到 GitHub Pages 時，將 index.html、styles.css、app.js 與 README.md 放在 repository 根目錄並啟用 Pages。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-12",
-    "sourcePath": "catalog/simple-knowledge-chatbot.yaml",
-    "stars": 0,
-    "forks": 0,
-    "lastPushedAt": "2026-07-12T06:13:00Z",
-    "repoUrl": "https://github.com/educatres/simpleKnowledgeChatbot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
@@ -1051,6 +650,166 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "拋體運動實驗室",
+    "description": "以互動式方格紙示範水平地表拋體運動，呈現初速分量、飛行時間、水平位移與最高點高度。",
+    "educatorSummary": "拋體運動實驗室是 Classroom Lab tzk 中的物理模擬頁，可調整初速、發射角與發射點高度，並以固定水平地表 y = 0 展示拋物線軌跡。工具會把 V0 分解為 Vx 與 Vy，並在解算結果區逐卡呈現水平初速度、垂直初速度、飛行時間、最高點時間、水平位移與最高點垂直位移。它適合讓學生連結公式、向量分解與動畫軌跡，理解水平等速與垂直等加速度如何共同形成拋體運動。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/projectilemotion/projectilemotion.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "physics",
+      "projectile-motion",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在國中自然科或高中物理入門中示範拋體運動的水平與垂直分解",
+      "讓學生改變初速、角度或發射高度，預測飛行時間、射程與最高點變化",
+      "搭配公式卡討論 v = v0 + at、x = v0t + 1/2at^2 與 v^2 = v0^2 + 2ax 的代入方式"
+    ],
+    "cautions": [
+      "模型採水平地表與理想化重力，不包含空氣阻力、風或真實投擲姿態",
+      "建議學生每次只改變一個參數，否則難以判讀初速、角度與高度的個別影響",
+      "公式推導仍需教師引導，避免學生只記結果卡而未理解水平與垂直方向的差異"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的拋體運動實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 projectilemotion/projectilemotion.html。",
+    "license": "MIT",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/classroom-lab-projectile-motion.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "探真拓知酷—自然組",
+    "description": "為科學課堂打造、以 GitHub Pages 發布的純前端互動實驗工具集。",
+    "educatorSummary": "以 GitHub Pages 發布的純前端互動教學工具集。根目錄 index.html 是所有工具的入口；各項實驗則以獨立子資料夾維護，方便持續加入新的課堂功能。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "課前評估工具功能是否符合課程需求",
+      "作為課堂活動、教學管理或學習輔助的候選工具",
+      "搭配 GitHub README 與原始碼了解部署方式"
+    ],
+    "cautions": [
+      "正式使用前請先小規模測試",
+      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
+      "正式導入前請先確認工具內容與課程需求相符"
+    ],
+    "language": "JavaScript",
+    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-10",
+    "sourcePath": "catalog/classroom-lab-tzk.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "探真拓知酷—通用工具 Classroom Timer tzk",
+    "description": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。",
+    "educatorSummary": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-timer-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "課前評估工具功能是否符合課程需求",
+      "作為課堂活動、教學管理或學習輔助的候選工具",
+      "搭配 GitHub README 與原始碼了解部署方式"
+    ],
+    "cautions": [
+      "正式使用前請先小規模測試",
+      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
+      "正式導入前請先確認工具內容與課程需求相符"
+    ],
+    "language": "JavaScript",
+    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
+    "license": "MIT",
+    "submittedAt": "2026-07-09",
+    "sourcePath": "catalog/classroom-timer-tzk.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-11T10:45:13Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "數字系統研究室",
+    "description": "以同步面板展示同一個 32-bit 整數的十進位、十六進位、八進位與二進位表示。",
+    "educatorSummary": "數字系統研究室是 Classroom Lab tzk 的資訊與數學概念工具，使用四個同步面板呈現同一個 32-bit 整數在 10、16、8、2 進位中的表示方式。每個面板提供機械式撥盤、直接輸入、加一、減一、最大值與重設操作，並以 ERR、OVF、NEG 燈號提示輸入錯誤、溢位與負數狀態。它適合讓學生理解位值、進位轉換、unsigned 32-bit 與 two's complement 補數表示。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/son/son.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "computer-science",
+      "number-systems",
+      "binary",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在資訊科技或數學課中說明二進位、八進位、十六進位與十進位的轉換",
+      "讓學生操作同一數值在不同進位制中的同步變化，理解位值與分組",
+      "搭配負數補數、整數溢位與資料表示單元，討論電腦如何儲存整數"
+    ],
+    "cautions": [
+      "工具聚焦 32-bit 整數表示，不等同於所有程式語言或硬體平台的數值行為",
+      "初學者容易混淆 signed 與 unsigned，建議教師先用小數值與邊界值示範",
+      "溢位與補數概念較抽象，適合搭配紙筆換算或位元卡片活動加深理解"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的數字系統研究室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 son/son.html。",
+    "license": "MIT",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/classroom-lab-number-systems.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
     "name": "會議時間調查系統",
     "description": "免註冊的會議時間調查神器。資料不留伺服器，初次設定雖稍顯繁複，但只要存下專屬網址，就能一輩子「清空再復用」，成為你專屬的永久會議揪團工具！",
     "educatorSummary": "這是一個可部署在 GitHub Pages 的會議時間調查工具，透過 Google Form 寫入回覆，並從公開檢視權限的 Google Sheet 讀取 event log 來還原會議設定、參加者回覆與統計結果。它適合教師、行政團隊或研究團隊用來建立匿名時段調查、產生填寫連結與 QR Code、統計每個時段可參加人數，並協助找出全員可參加或最多人可參加的會議時間。",
@@ -1130,6 +889,44 @@
     "forks": 0,
     "lastPushedAt": "2026-07-11T09:49:39Z",
     "repoUrl": "https://github.com/educatres/pulley-mechanics-lab",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "無邊際白板 Infinite Whiteboard",
+    "description": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。",
+    "educatorSummary": "一個純 HTML、CSS、JavaScript 實作的無邊際白板，可直接部署到 GitHub Pages，也可以直接用瀏覽器開啟 index.html 使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/infinite-whiteboard",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/infinite-whiteboard/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "課前評估工具功能是否符合課程需求",
+      "作為課堂活動、教學管理或學習輔助的候選工具",
+      "搭配 GitHub README 與原始碼了解部署方式"
+    ],
+    "cautions": [
+      "正式使用前請先小規模測試",
+      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
+      "正式導入前請先確認工具內容與課程需求相符"
+    ],
+    "language": "HTML",
+    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-09",
+    "sourcePath": "catalog/infinite-whiteboard.yaml",
+    "stars": 1,
+    "forks": 1,
+    "lastPushedAt": "2026-07-10T12:18:06Z",
+    "repoUrl": "https://github.com/educatres/infinite-whiteboard",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
@@ -1220,6 +1017,44 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "聽眾舉手統計",
+    "description": "透過瀏覽器鏡頭與視覺模型統計現場聽眾人數、舉手人數與舉手比例，協助教師掌握互動回應。",
+    "educatorSummary": "這是一個可直接在瀏覽器開啟的單頁工具，可連接攝影機並呼叫視覺模型 API，手動或定時統計現場聽眾總人數、舉手人數與比例。它適合在講座、課堂提問、即時投票或大型活動中快速掌握群體回應，但仍應把結果視為輔助觀察資料，而非個別學生表現判定。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/hand-raise-counter",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/hand-raise-counter/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "課堂提問後快速估計整體舉手回應比例",
+      "講座或工作坊中投影全螢幕儀表板，輔助主持人掌握互動狀況",
+      "比較不同活動段落的參與度變化，作為課後教學反思資料"
+    ],
+    "cautions": [
+      "使用攝影機前需透明告知並取得必要同意",
+      "統計結果可能受拍攝角度、遮擋與模型判斷影響，應以人工觀察輔助確認",
+      "API key 需由使用者自行保管，並確認影像傳輸符合校內資料保護規範"
+    ],
+    "language": "HTML",
+    "install": "使用 Chrome 或 Edge 開啟 舉手統計.html，允許攝影機權限後選擇 API 服務並填入 API key 或 Bearer token。若直接開啟檔案遇到瀏覽器安全限制，可改用本機靜態伺服器提供檔案。",
+    "license": "MIT",
+    "submittedAt": "2026-07-07",
+    "sourcePath": "catalog/hand-raise-counter.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T00:48:23Z",
+    "repoUrl": "https://github.com/educatres/hand-raise-counter",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
     "name": "航海家號：太陽系引力彈弓任務",
     "description": "以航海家號外行星任務為情境的繁體中文太空飛行小遊戲，讓學生操作探測船體驗引力彈弓。",
     "educatorSummary": "這是一個單檔 HTML 製作的 2D 太空飛行遊戲，玩家從地球附近出發，依序靠近木星、土星、天王星、海王星與冥王星，練習用行星重力改變航向與速度。它把太陽系距離、時間、質量與速度壓縮成適合遊玩的尺度，不追求嚴格比例的天體力學模擬，而是協助學生直覺理解重力輔助、速度向量、軌道能量與有限燃料策略。",
@@ -1263,6 +1098,49 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "說人話 speak-human-tw",
+    "description": "繁體中文台灣語境的去 AI 味改寫 Skill，協助找出 AI 寫作痕跡並提出更自然的改稿建議。",
+    "educatorSummary": "說人話 speak-human-tw 是一個給 Claude Code、Codex、Cursor 與其他 AI agent 使用的繁體中文改稿 Skill，核心目標不是代寫，而是校對已存在的文字，抓出 AI 常見寫作痕跡、中國用語、半形標點與過度模板化的表達。它內建 35 種以上 AI 中文寫作痕跡、台灣在地化用語檢查、保護清單與誤殺防護，並採取先列問題、再由作者決定是否套用的工作流。適合研究生、教師與學術寫作者用來檢查 AI 輔助撰寫後的摘要、報告、投稿信、研究推廣文或課程公告，但最後的立場、經驗與語氣仍應由作者本人補回。",
+    "authorName": "Raymondhou0917",
+    "authorGitHub": "Raymondhou0917",
+    "repo": "Raymondhou0917/speak-human-tw",
+    "homepage": "",
+    "launchUrl": "",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "research",
+      "writing",
+      "ai-skill",
+      "traditional-chinese",
+      "humanizer"
+    ],
+    "educationLevels": [
+      "研究"
+    ],
+    "useCases": [
+      "在研究寫作或 AI 素養課程中示範如何辨識 AI 腔、模板句與空泛論述",
+      "協助學生檢查 AI 輔助生成的報告、摘要或簡報文字，保留事實並修正不自然表達",
+      "作為繁體中文台灣用語、標點與改稿流程的範例，討論人機協作中的作者責任"
+    ],
+    "cautions": [
+      "工具定位是校對與改稿建議，不應替學生或研究者產生不存在的經驗、立場或故事",
+      "去 AI 味不等於提高內容品質，事實查核、論證強度與研究倫理仍需另外檢查",
+      "改稿建議可能不符合作者個人風格，正式交付前應由作者逐條取捨與人工確認"
+    ],
+    "language": "Markdown",
+    "install": "Claude Code 可將 repository clone 到 ~/.claude/skills/speak-human-tw；Codex 可 clone 專案後用 codex exec -C . 讀取 SKILL.md 並貼上要改寫的文字；Cursor 與其他平台可依 install/ 目錄文件設定。若只想先看問題不要直接改稿，可在指令中要求「先標問題不要改」。",
+    "license": "MIT",
+    "submittedAt": "2026-07-11",
+    "sourcePath": "catalog/speak-human-tw.yaml",
+    "stars": 356,
+    "forks": 48,
+    "lastPushedAt": "2026-07-11T03:57:33Z",
+    "repoUrl": "https://github.com/Raymondhou0917/speak-human-tw",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/14795468?v=4"
+  },
+  {
     "name": "課堂單選作答系統",
     "description": "純前端課堂單選作答工具，老師用 Google Sheet 管理題目與答案公布狀態，學生掃 QR code 作答。",
     "educatorSummary": "這是一個適合部署在 GitHub Pages 的純前端課堂單選作答工具。老師可用 Google Sheet 管理題目、選項、開放狀態與答案公布狀態，再由老師頁產生學生網址與 QR code；學生用手機進入網頁後作答，姓名與作答紀錄只儲存在學生自己的瀏覽器 localStorage。它適合用於不需要登入、不需要集中保存答案的即時練習、課堂暖身、形成性檢核或公布答案後的自我訂正情境。",
@@ -1301,5 +1179,127 @@
     "lastPushedAt": "2026-07-10T10:14:42Z",
     "repoUrl": "https://github.com/educatres/github-class-quiz-helper",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "課堂聽眾專注度分析",
+    "description": "透過瀏覽器鏡頭與視覺模型觀察課堂整體專注趨勢，協助教師掌握聽眾狀態。",
+    "educatorSummary": "這是一個單檔網頁工具，可在課堂中定時擷取畫面並呼叫支援 Responses API 的視覺模型，估算總人數、疑似不專心人數、手機使用比例與趨勢。它適合做為教師調整課堂節奏、觀察群體參與狀態與課後反思的輔助資料，不應用於個人評分、紀律處分或身分辨識。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/audience-analysis",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/audience-analysis/",
+    "tags": [
+      "education",
+      "teaching",
+      "github"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "大型課堂或講座中快速掌握整體注意力變化",
+      "教師研習時示範 AI 視覺模型在教學觀察上的可能性",
+      "課後回顧不同教學段落的群體參與趨勢"
+    ],
+    "cautions": [
+      "使用攝影機前需透明告知並取得必要同意",
+      "分析結果僅供群體觀察參考，不應用於個人評分或懲處",
+      "影像會送到使用者設定的 API endpoint，需確認資料保護與校內規範"
+    ],
+    "language": "HTML",
+    "install": "下載或 clone 專案後，建議用 python3 -m http.server 8000 啟動本機 HTTP server，再開啟 聽眾分析.html。使用前需準備可用攝影機與支援影像輸入的 API key。",
+    "license": "MIT",
+    "submittedAt": "2026-07-07",
+    "sourcePath": "catalog/audience-analysis.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T00:43:22Z",
+    "repoUrl": "https://github.com/educatres/audience-analysis",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "軌道觀測站",
+    "description": "同步操作地日公轉、月地相位、月相事件與季節溫度的 3D 天文教學模型。",
+    "educatorSummary": "軌道觀測站是 Classroom Lab tzk 的天文與地球科學互動工具，日期範圍涵蓋 2025 至 2026 年，可用年月日選單、滑桿與按鈕同步控制地日場景、月地場景、月相、事件清單與季節溫度。工具以 Three.js 展示地軸傾角、近日點遠日點、二分二至、月相幾何、日月蝕樣本、流星雨與彗星教學動態，並以臺北為觀測基準呈現月相與季節訊號。它適合用來把抽象的軌道、月相、季節與觀測條件放在同一時間軸上比較。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/ogo/ogo.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "astronomy",
+      "seasons",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在自然科學或地球科學課程中說明地日公轉、地軸傾角、季節與月相",
+      "讓學生改變日期，觀察月相、日月蝕樣本、流星雨或彗星事件如何接近或遠離",
+      "搭配臺北與其他城市的季節溫度訊號，討論緯度、季節與資料模型限制"
+    ],
+    "cautions": [
+      "軌道、天體大小、距離、農曆與溫度都是教育模型，不代表精密天文曆或氣象預報",
+      "部分氣溫缺漏會透過 Open-Meteo 補值，教學時需說明資料來源與再分析或預報的限制",
+      "事件清單是樣本資料，適合概念教學，不應取代實際觀測前的天文台或氣象資訊查詢"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的軌道觀測站頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 ogo/ogo.html。",
+    "license": "MIT",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/classroom-lab-orbit-observatory.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "透鏡成像實驗室",
+    "description": "用互動式光線圖示範凸透鏡與凹透鏡成像，呈現焦距、物距、像距、放大率與成像性質。",
+    "educatorSummary": "透鏡成像實驗室是 Classroom Lab tzk 的光學教學頁，學生可以切換凸透鏡與凹透鏡，並用焦距倍數調整物距。畫面以 SVG 即時繪製光軸、焦點、物體、像的位置與三條主光線，實線與虛線分別表示實際光線與反向延長線，並以不同顏色呈現實像與虛像。右側面板同步顯示焦距、物距、像距、放大率、成像類型、方向與位置，適合用來把薄透鏡公式和光線作圖連在一起。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/lens/lens.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "optics",
+      "lens",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在光學單元中示範凸透鏡、凹透鏡與焦距位置對成像的影響",
+      "讓學生拖曽物距，觀察實像、虛像、正立、倒立與放大率如何改變",
+      "搭配實驗器材或作圖練習，檢查薄透鏡公式與三條主光線的對應關係"
+    ],
+    "cautions": [
+      "工具使用薄透鏡近似，不處理像差、厚透鏡、光圈大小或真實鏡片材質差異",
+      "當成像位置超出畫面時需引導學生依提示判讀方向，而不是誤以為沒有成像",
+      "建議搭配手繪光線圖活動，避免學生只看動畫而未掌握作圖邏輯"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的透鏡成像實驗室頁面。若要本機使用，可下載 classroom-lab-tzk 專案後以靜態伺服器開啟，或從工具總頁進入 lens/lens.html。",
+    "license": "MIT",
+    "submittedAt": "2026-07-12",
+    "sourcePath": "catalog/classroom-lab-lens.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   }
 ]

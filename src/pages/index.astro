@@ -2,7 +2,6 @@
 import { educationLevels, entries } from "../lib/catalog";
 import "../styles/global.css";
 
-const totalStars = entries.reduce((sum, entry) => sum + entry.stars, 0);
 const totalRepos = entries.length;
 const logoUrl = `${import.meta.env.BASE_URL}logo.png`;
 
@@ -20,7 +19,7 @@ function compactIntro(value: string) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="為教育工作者整理的 GitHub 教育工具推薦網站，讀取 list.txt 的開源專案並整理適用教育階段、教學用途、注意事項與 GitHub stars。"
+      content="為教育工作者整理的 GitHub 教育工具推薦網站，讀取 list.txt 的開源專案並整理適用教育階段、教學用途與注意事項。"
     />
     <title>教育工具 GitHub 推薦</title>
   </head>
@@ -41,7 +40,7 @@ function compactIntro(value: string) {
               收錄工具時，會盡量以開源專案為優先，但不以開源作為必要條件。更重要的是，希望這些工具不需註冊、不過度蒐集個人資料，也盡可能避免廣告干擾。除了整理現有工具外，我也自行開發並分享了一些小工具，希望提供免費、不索取個資、無廣告的教學資源。
             </p>
             <p>
-              以下內容主要參考 GitHub 專案的 README 與公開 metadata，整理成適合教育工作者快速評估的資訊，包括適用對象、教學情境、導入時的注意事項，以及 GitHub Stars 等參考指標。
+              以下內容主要參考 GitHub 專案的 README 與公開 metadata，整理成適合教育工作者快速評估的資訊，包括適用對象、教學情境與導入時的注意事項。
             </p>
             <p>
               一個人的力量與接觸領域有限，如果您也有推薦的工具，歡迎填寫
@@ -74,10 +73,6 @@ function compactIntro(value: string) {
             <strong>{educationLevels.length}</strong>
             <span>教育階段</span>
           </div>
-          <div>
-            <strong>{totalStars}</strong>
-            <span>Stars</span>
-          </div>
         </div>
       </header>
 
@@ -97,7 +92,6 @@ function compactIntro(value: string) {
           <span>排序</span>
           <select id="sort">
             <option value="name">名稱</option>
-            <option value="stars">Stars</option>
             <option value="updated">最近更新</option>
           </select>
         </label>
@@ -134,7 +128,6 @@ function compactIntro(value: string) {
                 data-language={entry.language}
                 data-levels={entry.educationLevels.join(",")}
                 data-use-cases={entry.useCases.join(" ").toLowerCase()}
-                data-stars={entry.stars}
                 data-updated={entry.lastPushedAt || entry.submittedAt}
               >
                 <div class="cardTop">
@@ -146,10 +139,6 @@ function compactIntro(value: string) {
                       </a>
                       <p class="compactIntro">{compactIntro(entry.description)}</p>
                     </div>
-                  </div>
-                  <div class="rating" title="GitHub Stars">
-                    <span aria-hidden="true">★</span>
-                    <strong>{entry.stars}</strong>
                   </div>
                 </div>
 
@@ -348,7 +337,7 @@ function compactIntro(value: string) {
         return visibleCards.sort((a, b) => {
           if (mode === "name") return data(a, "name").localeCompare(data(b, "name"));
           if (mode === "updated") return data(b, "updated").localeCompare(data(a, "updated"));
-          return Number(data(b, "stars")) - Number(data(a, "stars"));
+          return data(a, "name").localeCompare(data(b, "name"));
         });
       }
 

@@ -70,7 +70,7 @@ async function enrich(entry) {
 const entries = await Promise.all((await listEntryFiles()).map(readEntry));
 const enriched = await Promise.all(entries.map(enrich));
 
-enriched.sort((a, b) => b.stars - a.stars || a.name.localeCompare(b.name));
+enriched.sort((a, b) => a.name.localeCompare(b.name));
 
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
 await fs.writeFile(outputPath, `${JSON.stringify(enriched, null, 2)}\n`);

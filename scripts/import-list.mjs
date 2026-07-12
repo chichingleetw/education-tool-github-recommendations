@@ -156,7 +156,7 @@ function genericRecommendation(repo, repoData, readme) {
     cautions: [
       "正式使用前請先小規模測試",
       "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "GitHub stars 僅作為社群參考，不代表教學品質保證"
+      "正式導入前請先確認工具內容與課程需求相符"
     ]
   };
 }
