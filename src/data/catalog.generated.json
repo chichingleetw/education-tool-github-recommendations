@@ -75,8 +75,8 @@
     "license": "CC BY-NC 4.0",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/academic-research-skills.yaml",
-    "stars": 37799,
-    "forks": 3076,
+    "stars": 37816,
+    "forks": 3077,
     "lastPushedAt": "2026-07-13T10:02:38Z",
     "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
     "avatarUrl": "https://avatars.githubusercontent.com/u/132531341?v=4"
@@ -360,7 +360,7 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/claude-paper-tools.yaml",
-    "stars": 28,
+    "stars": 29,
     "forks": 5,
     "lastPushedAt": "2026-07-14T08:21:40Z",
     "repoUrl": "https://github.com/drpwchen/paper-review-and-digest",
@@ -694,6 +694,49 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "字鬥英雄｜英文單字練功坊",
+    "description": "英文單字遊戲化練習網站，涵蓋國小 1200、國中 2000 與高中 6000 字，結合閃卡、自測與對戰。",
+    "educatorSummary": "字鬥英雄是一個繁體中文介面的英文單字練習網站，入口可選國小、國中與高中學段，主打從 1200 字、2000 字到 6000 字的分級練功。工具結合 Leitner 間隔複習閃卡、單字自測、限時衝刺、錯題複習、文學家對戰、字綴心智圖、查單字、會考英文考古題、戰績統計、英雄檔案與字幣獎勵。它適合用來提高學生每日短時間接觸英文單字的動機，也能讓教師示範「少量多次、錯題回流、用遊戲化維持練習」的背單字流程。",
+    "authorName": "vocab-duel.vercel.app",
+    "authorGitHub": "",
+    "repo": "",
+    "homepage": "https://vocab-duel.vercel.app/",
+    "launchUrl": "https://vocab-duel.vercel.app/",
+    "tags": [
+      "education",
+      "teaching",
+      "english",
+      "vocabulary",
+      "flashcards",
+      "game-based-learning",
+      "exam-prep"
+    ],
+    "educationLevels": [
+      "中小學",
+      "高中"
+    ],
+    "useCases": [
+      "作為課前暖身、課後自主練習或寒暑假英文單字任務的遊戲化平台",
+      "讓學生使用閃卡、自測與錯題複習，建立間隔複習與自我檢核習慣",
+      "搭配限時衝刺、文學家對戰或戰績卡，設計班級挑戰與同儕互動活動"
+    ],
+    "cautions": [
+      "進度主要儲存在學生目前瀏覽器本機，換裝置或清除瀏覽器資料可能影響紀錄",
+      "遊戲化獎勵能提升動機，但仍需教師引導學生回到單字理解、例句與實際使用",
+      "若用於正式評量，建議另行保存成績或搭配教師指定字表，避免只依網站戰績判斷學習成效"
+    ],
+    "language": "JavaScript",
+    "install": "直接開啟線上網站即可使用。學生可先選擇國小、國中或高中挑戰，再進入閃卡練功、單字自測、限時衝刺或其他模式；不需要安裝軟體。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/vocab-duel.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "",
+    "repoUrl": "https://vocab-duel.vercel.app/",
+    "avatarUrl": ""
+  },
+  {
     "name": "學生隨機抽籤與分組工具",
     "description": "純靜態網頁版的學生抽籤與隨機分組工具，支援貼上名單、指定抽籤人數與依每組人數平均分組。",
     "educatorSummary": "這是一個可直接部署到 GitHub Pages 的課堂管理小工具，教師可以貼上學生名單，使用換行、逗號、中文逗號、頓號、分號或 Tab 分隔姓名，並在頁面上看到有效學生人數與重複姓名提醒。它支援指定人數隨機抽籤、指定每組人數進行平均隨機分組，以及複製純文字結果，適合在課堂點名、活動分組、討論任務與臨時小組安排時快速使用。",
@@ -1016,6 +1059,49 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "消化道大冒險｜食物旅程模擬器",
+    "description": "互動式食物消化過程模擬網頁，可選擇不同食物、份量與咀嚼程度，觀察 0 到 72 小時的消化旅程。",
+    "educatorSummary": "消化道大冒險是一個可直接部署到 GitHub Pages 的純前端生物教學模擬器。學生可選擇水、飲料、米飯、牛排、蔬菜、珍珠奶茶、油炸食物等多種食物，調整份量與咀嚼程度後，用時間軸觀察食物在口腔、食道、胃、小腸、大腸、直腸到排出體外的移動與狀態變化。工具會即時顯示目前器官、食物狀態、消化程度、吸收比例與下一階段，也提供播放、暫停、倍速、階段跳轉、食物圖例與挑戰題，適合用來把「不同食物消化速度不同」「小腸是主要吸收場所」「液體與高脂肪食物通過胃部速度不同」等概念轉成可觀察的課堂活動。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/food-digestion-simulator",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/food-digestion-simulator/",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "biology",
+      "digestive-system",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學",
+      "高中"
+    ],
+    "useCases": [
+      "在自然科學、生物或健康教育課中說明消化道器官順序、食物移動與營養吸收位置",
+      "讓學生比較液體、澱粉、蛋白質、高纖維與高脂肪食物在胃、小腸與大腸中的停留差異",
+      "透過份量、咀嚼程度、時間軸與挑戰題，引導學生討論模型假設、飲食習慣與消化概念"
+    ],
+    "cautions": [
+      "本工具的時間、消化程度與吸收比例是教學用簡化模型，不可作為醫療診斷或個人健康判斷",
+      "真實消化速度會受體質、食物份量、脂肪含量、咀嚼程度與健康狀況影響，教師應補充個體差異",
+      "食物分類與旅程以概念理解為主，若用於正式評量，建議搭配課本圖表、器官功能整理與學生解釋任務"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 線上版本使用。若要本機測試，可下載或 clone 專案後直接用瀏覽器開啟 index.html；也可以在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-15",
+    "sourcePath": "catalog/food-digestion-simulator.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T16:35:09Z",
+    "repoUrl": "https://github.com/educatres/food-digestion-simulator",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
     "name": "滑輪救援隊：2D 力學實驗室",
     "description": "國中自然科取向的 2D 滑輪小遊戲，可比較定滑輪、動滑輪與滑輪組的省力效果和拉繩距離。",
     "educatorSummary": "滑輪救援隊是一個可直接部署到 GitHub Pages 的 2D 力學教學遊戲，使用 Canvas 呈現定滑輪、動滑輪與多種滑輪組的輪槽、連續繩路與承重繩段。學生可以切換 7 種滑輪配置，觀察理想機械利益、拉力、拉繩距離與功的即時計算，也能比較理想模式與真實摩擦模式下的差異。工具內含拉繩與重物上升動畫、力箭頭、預測題、任務關卡與生活故事，適合用來把「省力不省功」、「承重繩段越多拉力越小但要拉更長距離」等概念具體化。",
@@ -1138,6 +1224,48 @@
     "forks": 0,
     "lastPushedAt": "2026-07-11T16:51:24Z",
     "repoUrl": "https://github.com/educatres/chopstick-bridge-lab",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "紅血球心臟循環冒險",
+    "description": "以紅血球在全身循環中的移動為主軸，示範心房、心室、瓣膜、血氧與血流變化的教學模擬器。",
+    "educatorSummary": "紅血球心臟循環冒險是一個可部署到 GitHub Pages 的循環系統教學模擬器。學生可以觀察紅血球沿人體循環路線移動，看到含氧量變化與顏色差異，並理解心臟舒張、心房收縮、心室收縮三階段中三尖瓣、肺動脈瓣、二尖瓣與主動脈瓣的開闔關係。工具也提供心率、血管阻力、高血壓、血管阻塞、瓣膜逆流、心房顫動、心室顫動與心律不整等模擬開關，適合用來把血壓、有效血流量、器官供氧與心臟負荷連成可觀察的系統概念。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/red-blood-cell-heart-adventure",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/red-blood-cell-heart-adventure/",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "biology",
+      "circulatory-system",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在自然科學或生物課中說明體循環、肺循環與紅血球含氧量變化",
+      "讓學生觀察心臟週期與四個主要瓣膜的開闔時機，理解血流單向性的原因",
+      "透過高血壓、血管阻塞、瓣膜逆流與心律異常模擬，討論循環系統失衡的影響"
+    ],
+    "cautions": [
+      "本工具是教學模擬，不可作為醫療診斷、臨床判斷或健康建議",
+      "缺氧血在人體中不是藍色，工具使用暗紅與鮮紅區分低氧與高氧血，教師應特別說明",
+      "疾病與異常狀態為簡化模型，正式課程中應補充真實生理機制與個體差異"
+    ],
+    "language": "HTML",
+    "install": "可直接開啟 GitHub Pages 線上版本，也可以下載專案後直接用瀏覽器開啟 index.html。若要用本機伺服器測試，可在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/red-blood-cell-heart-adventure.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T15:24:07Z",
+    "repoUrl": "https://github.com/educatres/red-blood-cell-heart-adventure",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
@@ -1302,7 +1430,7 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/speak-human-tw.yaml",
-    "stars": 498,
+    "stars": 501,
     "forks": 59,
     "lastPushedAt": "2026-07-14T11:08:59Z",
     "repoUrl": "https://github.com/Raymondhou0917/speak-human-tw",
@@ -1469,90 +1597,5 @@
     "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "紅血球心臟循環冒險",
-    "description": "以紅血球在全身循環中的移動為主軸，示範心房、心室、瓣膜、血氧與血流變化的教學模擬器。",
-    "educatorSummary": "紅血球心臟循環冒險是一個可部署到 GitHub Pages 的循環系統教學模擬器。學生可以觀察紅血球沿人體循環路線移動，看到含氧量變化與顏色差異，並理解心臟舒張、心房收縮、心室收縮三階段中三尖瓣、肺動脈瓣、二尖瓣與主動脈瓣的開闔關係。工具也提供心率、血管阻力、高血壓、血管阻塞、瓣膜逆流、心房顫動、心室顫動與心律不整等模擬開關，適合用來把血壓、有效血流量、器官供氧與心臟負荷連成可觀察的系統概念。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/red-blood-cell-heart-adventure",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/red-blood-cell-heart-adventure/",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "biology",
-      "circulatory-system",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在自然科學或生物課中說明體循環、肺循環與紅血球含氧量變化",
-      "讓學生觀察心臟週期與四個主要瓣膜的開闔時機，理解血流單向性的原因",
-      "透過高血壓、血管阻塞、瓣膜逆流與心律異常模擬，討論循環系統失衡的影響"
-    ],
-    "cautions": [
-      "本工具是教學模擬，不可作為醫療診斷、臨床判斷或健康建議",
-      "缺氧血在人體中不是藍色，工具使用暗紅與鮮紅區分低氧與高氧血，教師應特別說明",
-      "疾病與異常狀態為簡化模型，正式課程中應補充真實生理機制與個體差異"
-    ],
-    "language": "HTML",
-    "install": "可直接開啟 GitHub Pages 線上版本，也可以下載專案後直接用瀏覽器開啟 index.html。若要用本機伺服器測試，可在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-14",
-    "sourcePath": "catalog/red-blood-cell-heart-adventure.yaml",
-    "stars": 0,
-    "forks": 0,
-    "lastPushedAt": "2026-07-14T15:24:07Z",
-    "repoUrl": "https://github.com/educatres/red-blood-cell-heart-adventure",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "字鬥英雄｜英文單字練功坊",
-    "description": "英文單字遊戲化練習網站，涵蓋國小 1200、國中 2000 與高中 6000 字，結合閃卡、自測與對戰。",
-    "educatorSummary": "字鬥英雄是一個繁體中文介面的英文單字練習網站，入口可選國小、國中與高中學段，主打從 1200 字、2000 字到 6000 字的分級練功。工具結合 Leitner 間隔複習閃卡、單字自測、限時衝刺、錯題複習、文學家對戰、字綴心智圖、查單字、會考英文考古題、戰績統計、英雄檔案與字幣獎勵。它適合用來提高學生每日短時間接觸英文單字的動機，也能讓教師示範「少量多次、錯題回流、用遊戲化維持練習」的背單字流程。",
-    "authorName": "vocab-duel.vercel.app",
-    "authorGitHub": "",
-    "repo": "",
-    "homepage": "https://vocab-duel.vercel.app/",
-    "launchUrl": "https://vocab-duel.vercel.app/",
-    "tags": [
-      "education",
-      "teaching",
-      "english",
-      "vocabulary",
-      "flashcards",
-      "game-based-learning",
-      "exam-prep"
-    ],
-    "educationLevels": [
-      "中小學",
-      "高中"
-    ],
-    "useCases": [
-      "作為課前暖身、課後自主練習或寒暑假英文單字任務的遊戲化平台",
-      "讓學生使用閃卡、自測與錯題複習，建立間隔複習與自我檢核習慣",
-      "搭配限時衝刺、文學家對戰或戰績卡，設計班級挑戰與同儕互動活動"
-    ],
-    "cautions": [
-      "進度主要儲存在學生目前瀏覽器本機，換裝置或清除瀏覽器資料可能影響紀錄",
-      "遊戲化獎勵能提升動機，但仍需教師引導學生回到單字理解、例句與實際使用",
-      "若用於正式評量，建議另行保存成績或搭配教師指定字表，避免只依網站戰績判斷學習成效"
-    ],
-    "language": "JavaScript",
-    "install": "直接開啟線上網站即可使用。學生可先選擇國小、國中或高中挑戰，再進入閃卡練功、單字自測、限時衝刺或其他模式；不需要安裝軟體。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-14",
-    "sourcePath": "catalog/vocab-duel.yaml",
-    "stars": 0,
-    "forks": 0,
-    "lastPushedAt": "",
-    "repoUrl": "https://vocab-duel.vercel.app/",
-    "avatarUrl": ""
   }
 ]

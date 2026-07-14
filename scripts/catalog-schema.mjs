@@ -76,7 +76,7 @@ export function stringifyCatalogYaml(entry) {
     } else if (key === "submittedAt") {
       lines.push(`${key}: "${value}"`);
     } else {
-      lines.push(`${key}: ${value ?? ""}`);
+      lines.push(value ? `${key}: ${value}` : `${key}:`);
     }
   }
   return `${lines.join("\n")}\n`;

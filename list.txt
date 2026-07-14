@@ -36,3 +36,4 @@ https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.gi
 https://github.com/jong-liu/protein-ligand-HB-interaction/	大學	https://jong-liu.github.io/protein-ligand-HB-interaction/
 https://github.com/educatres/red-blood-cell-heart-adventure	中小學	https://educatres.github.io/red-blood-cell-heart-adventure/
 	中小學、高中	https://vocab-duel.vercel.app/
+https://github.com/educatres/food-digestion-simulator	中小學、高中	https://educatres.github.io/food-digestion-simulator/
