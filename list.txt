@@ -3,7 +3,6 @@ https://github.com/educatres/hand-raise-counter	不限領域	https://educatres.g
 https://github.com/educatres/learning-portfolio-ai-coach	高中
 https://github.com/educatres/promptLab	不限領域	https://air.cgu.edu.tw/workspace3/PromptLab/
 https://github.com/educatres/github-class-quiz-helper	中小學、高中、大學	https://educatres.github.io/github-class-quiz-helper/teacher.html
-https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.github.io/classroom-timer-tzk/
 https://github.com/educatres/classboard	不限領域	https://educatres.github.io/classboard/demo.html
 https://github.com/educatres/infinite-whiteboard	不限領域	https://educatres.github.io/infinite-whiteboard/
 https://github.com/educatres/classPop	不限領域	https://educatres.github.io/classPop/
@@ -30,3 +29,7 @@ https://github.com/kisaraki/classroom-lab-tzk	中小學	https://kisaraki.github.
 https://github.com/kisaraki/classroom-lab-tzk	中小學	https://kisaraki.github.io/classroom-lab-tzk/son/son.html
 https://github.com/kisaraki/classroom-lab-tzk	中小學	https://kisaraki.github.io/classroom-lab-tzk/trigfun/trigfun.html
 https://github.com/kisaraki/classroom-lab-tzk	中小學	https://kisaraki.github.io/classroom-lab-tzk/ogo/ogo.html
+https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.github.io/classroom-timer-tzk/?tool=clock
+https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.github.io/classroom-timer-tzk/?tool=stopwatch
+https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.github.io/classroom-timer-tzk/?tool=multi-stopwatch
+https://github.com/kisaraki/classroom-timer-tzk	不限領域	https://kisaraki.github.io/classroom-timer-tzk/?tool=countdown

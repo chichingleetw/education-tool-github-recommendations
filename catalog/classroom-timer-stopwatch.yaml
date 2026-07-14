@@ -1,0 +1,31 @@
+name: Classroom Timer 大型碼表
+description: 單一任務用的大畫面碼表，支援開始、停止、繼續、歸零與全螢幕投影。
+educatorSummary: |
+  Classroom Timer 的大型碼表模式適合需要全班共同看見計時進度的課堂活動，例如口頭報告、實驗操作、分組挑戰、閱讀限時或休息倒數前的暖身任務。工具以 performance.now() 計算實際經過時間，降低長時間執行的累積誤差，並提供字型、文字顏色、背景色與全螢幕顯示選項。它是純前端工具，不需要帳號、後端或網路 API。
+authorName: kisaraki
+authorGitHub: kisaraki
+repo: kisaraki/classroom-timer-tzk
+homepage: 
+launchUrl: https://kisaraki.github.io/classroom-timer-tzk/?tool=stopwatch
+tags:
+  - education
+  - teaching
+  - github
+  - classroom-management
+  - timer
+  - stopwatch
+educationLevels:
+  - 不限領域
+useCases:
+  - 計時學生報告、實作挑戰、討論任務或搶答活動的單一時段
+  - 投影在教室大螢幕上，讓學生自行掌握剩餘節奏與任務進度
+  - 搭配 Space、R、F 等快捷鍵，讓教師在走動或操作電子白板時快速控制
+cautions:
+  - 碼表適合計算經過時間，不適合需要結束提醒或倒數警示的活動
+  - 若使用投影或觸控裝置，建議活動前測試全螢幕、快捷鍵與瀏覽器焦點狀態
+  - 長時間活動仍應留意裝置休眠、瀏覽器分頁切換或投影設備中斷
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 的大型碼表連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=stopwatch 直接進入。
+license: MIT
+submittedAt: "2026-07-14"

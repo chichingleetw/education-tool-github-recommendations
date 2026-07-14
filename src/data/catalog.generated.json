@@ -34,8 +34,8 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/academic-humanizer.yaml",
-    "stars": 377,
-    "forks": 42,
+    "stars": 449,
+    "forks": 52,
     "lastPushedAt": "2026-07-03T07:58:33Z",
     "repoUrl": "https://github.com/AIScientists-Dev/academic-humanizer",
     "avatarUrl": "https://avatars.githubusercontent.com/u/226059021?v=4"
@@ -75,9 +75,9 @@
     "license": "CC BY-NC 4.0",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/academic-research-skills.yaml",
-    "stars": 37458,
-    "forks": 3055,
-    "lastPushedAt": "2026-07-12T00:42:22Z",
+    "stars": 37766,
+    "forks": 3070,
+    "lastPushedAt": "2026-07-13T10:02:38Z",
     "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
     "avatarUrl": "https://avatars.githubusercontent.com/u/132531341?v=4"
   },
@@ -113,11 +113,175 @@
     "license": "MIT",
     "submittedAt": "2026-07-10",
     "sourcePath": "catalog/classpop.yaml",
-    "stars": 1,
+    "stars": 2,
     "forks": 1,
     "lastPushedAt": "2026-07-12T08:53:10Z",
     "repoUrl": "https://github.com/educatres/classPop",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "Classroom Timer 20 組碼表",
+    "description": "可同時管理 20 組獨立碼表，適合分組活動、闖關任務與多站課堂計時。",
+    "educatorSummary": "Classroom Timer 的 20 組碼表模式讓教師在同一畫面管理多組獨立計時器，每組可點擊數字停止或繼續，也支援全部開始、全部停止與全部歸零。它適合多組學生同時進行任務但起訖時間不同的情境，例如分站實驗、分組討論、體育闖關、作品展示或學習中心輪替。七段顯示採低負載更新策略，降低大量碼表同時運作時的重繪負擔。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-timer-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/?tool=multi-stopwatch",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "classroom-management",
+      "timer",
+      "group-work"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "管理多組學生不同步開始或結束的任務時間",
+      "在分站活動中記錄各組完成時間，方便活動後比較策略與效率",
+      "投影 20 組碼表，讓各組自行看見自己的進度並負責時間管理"
+    ],
+    "cautions": [
+      "此工具顯示多組時間，但不會儲存成績或匯出紀錄，正式評分需另行記錄",
+      "分組數少於 20 組時，建議事先指定使用哪些編號，避免學生看錯組別",
+      "若需要精密競賽判定，仍應搭配人工裁判或專用計時設備確認結果"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的 20 組碼表連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=multi-stopwatch 直接進入。",
+    "license": "MIT",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/classroom-timer-multi-stopwatch.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T06:25:40Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "Classroom Timer 倒數計時器",
+    "description": "大畫面倒數計時器，支援欄位滾輪、快速加減、最後秒數提醒、沙漏動畫與提示音。",
+    "educatorSummary": "Classroom Timer 的倒數計時器模式適合需要清楚結束點的課堂活動，例如限時討論、測驗、實作任務、休息時間、展演準備或輪站切換。教師可以用滑鼠滾輪、上下按鈕、觸控滑動、鍵盤方向鍵與快速加減設定時分秒與百分秒，並可啟用最後 N 秒背光提醒、沙漏動畫、純文字模式與瀏覽器 Web Audio API 產生的提示音。工具不使用外部音訊檔、後端或網路 API。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-timer-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/?tool=countdown",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "classroom-management",
+      "timer",
+      "countdown"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "為討論、閱讀、測驗、實作或休息設定明確倒數時間",
+      "用最後秒數提醒與大畫面進度，協助學生提前收尾與轉換活動",
+      "在觸控螢幕或電子白板上快速調整時間，支援臨場延長或縮短任務"
+    ],
+    "cautions": [
+      "瀏覽器可能因自動播放政策限制提示音，正式上課前應先測試聲音開關",
+      "倒數提醒能輔助節奏，但低年級或特殊需求學生仍可能需要口頭提醒",
+      "若裝置進入休眠、分頁被背景化或投影中斷，顯示效果可能受影響"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的倒數計時器連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=countdown 直接進入。",
+    "license": "MIT",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/classroom-timer-countdown.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T06:25:40Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "Classroom Timer 即時時鐘",
+    "description": "為教室投影與電子白板設計的大畫面即時時鐘，可顯示數位時間、日期與指針鐘。",
+    "educatorSummary": "Classroom Timer 的即時時鐘模式是純前端教室時間顯示工具，適合在投影、電子白板或觸控螢幕上長時間顯示目前時間。它提供數位時間、日期、指針鐘、電子錶外框，以及多種字型、文字顏色與背景切換，方便教師依教室光線、投影設備與活動情境調整可讀性。工具不需要登入、後端或外部 API，偏好只留在目前瀏覽器中。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-timer-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/?tool=clock",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "classroom-management",
+      "timer",
+      "clock"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "在課堂、考試、分站活動或工作坊中投影目前時間，協助學生掌握節奏",
+      "搭配休息時間、集合時間或任務截止時間，提供全班一致的時間基準",
+      "在電子白板上切換指針鐘與數位時間，輔助低年級學生認讀時間"
+    ],
+    "cautions": [
+      "即時時鐘依賴裝置本機時間，正式活動前應確認電腦或平板時間已校準",
+      "投影環境亮度不同，建議先測試背景與文字顏色，確保後排學生能清楚辨識",
+      "工具不會自動記錄學生行為或課堂事件，若需紀錄仍需搭配其他方式"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的即時時鐘連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=clock 直接進入。",
+    "license": "MIT",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/classroom-timer-clock.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T06:25:40Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
+    "name": "Classroom Timer 大型碼表",
+    "description": "單一任務用的大畫面碼表，支援開始、停止、繼續、歸零與全螢幕投影。",
+    "educatorSummary": "Classroom Timer 的大型碼表模式適合需要全班共同看見計時進度的課堂活動，例如口頭報告、實驗操作、分組挑戰、閱讀限時或休息倒數前的暖身任務。工具以 performance.now() 計算實際經過時間，降低長時間執行的累積誤差，並提供字型、文字顏色、背景色與全螢幕顯示選項。它是純前端工具，不需要帳號、後端或網路 API。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-timer-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/?tool=stopwatch",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "classroom-management",
+      "timer",
+      "stopwatch"
+    ],
+    "educationLevels": [
+      "不限領域"
+    ],
+    "useCases": [
+      "計時學生報告、實作挑戰、討論任務或搶答活動的單一時段",
+      "投影在教室大螢幕上，讓學生自行掌握剩餘節奏與任務進度",
+      "搭配 Space、R、F 等快捷鍵，讓教師在走動或操作電子白板時快速控制"
+    ],
+    "cautions": [
+      "碼表適合計算經過時間，不適合需要結束提醒或倒數警示的活動",
+      "若使用投影或觸控裝置，建議活動前測試全螢幕、快捷鍵與瀏覽器焦點狀態",
+      "長時間活動仍應留意裝置休眠、瀏覽器分頁切換或投影設備中斷"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的大型碼表連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=stopwatch 直接進入。",
+    "license": "MIT",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/classroom-timer-stopwatch.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T06:25:40Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
   {
     "name": "GPS 定位實驗室",
@@ -157,7 +321,7 @@
     "sourcePath": "catalog/classroom-lab-gps-3d.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -196,10 +360,10 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/claude-paper-tools.yaml",
-    "stars": 26,
-    "forks": 4,
-    "lastPushedAt": "2026-07-10T08:01:12Z",
-    "repoUrl": "https://github.com/drpwchen/claude-paper-tools",
+    "stars": 27,
+    "forks": 5,
+    "lastPushedAt": "2026-07-14T08:21:40Z",
+    "repoUrl": "https://github.com/drpwchen/paper-review-and-digest",
     "avatarUrl": "https://avatars.githubusercontent.com/u/55537221?v=4"
   },
   {
@@ -319,7 +483,7 @@
     "sourcePath": "catalog/simple-knowledge-chatbot.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T13:36:39Z",
+    "lastPushedAt": "2026-07-13T22:55:30Z",
     "repoUrl": "https://github.com/educatres/simpleKnowledgeChatbot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
@@ -403,7 +567,7 @@
     "sourcePath": "catalog/classroom-lab-trig-functions.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -439,7 +603,7 @@
     "license": "MIT",
     "submittedAt": "2026-07-09",
     "sourcePath": "catalog/classboard.yaml",
-    "stars": 1,
+    "stars": 2,
     "forks": 0,
     "lastPushedAt": "2026-07-12T12:59:27Z",
     "repoUrl": "https://github.com/educatres/classboard",
@@ -604,7 +768,7 @@
     "sourcePath": "catalog/exam-paper-reviewing-robot.yaml",
     "stars": 0,
     "forks": 0,
-    "lastPushedAt": "2026-07-11T05:50:44Z",
+    "lastPushedAt": "2026-07-13T19:59:06Z",
     "repoUrl": "https://github.com/kueilan/ExamPaperReviewingRobot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/105831002?v=4"
   },
@@ -686,7 +850,7 @@
     "sourcePath": "catalog/classroom-lab-projectile-motion.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -724,46 +888,8 @@
     "sourcePath": "catalog/classroom-lab-tzk.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
-  },
-  {
-    "name": "探真拓知酷—通用工具 Classroom Timer tzk",
-    "description": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。",
-    "educatorSummary": "一套為教室投影、電子白板與觸控裝置設計的純前端計時工具。無須登入、後端或網路 API，可直接在瀏覽器中使用。 教育工作者可先從 README 的使用流程與限制開始評估，確認課堂情境、學生資料與校內資訊安全規範都適合後再導入。",
-    "authorName": "kisaraki",
-    "authorGitHub": "kisaraki",
-    "repo": "kisaraki/classroom-timer-tzk",
-    "homepage": "",
-    "launchUrl": "https://kisaraki.github.io/classroom-timer-tzk/",
-    "tags": [
-      "education",
-      "teaching",
-      "github"
-    ],
-    "educationLevels": [
-      "不限領域"
-    ],
-    "useCases": [
-      "課前評估工具功能是否符合課程需求",
-      "作為課堂活動、教學管理或學習輔助的候選工具",
-      "搭配 GitHub README 與原始碼了解部署方式"
-    ],
-    "cautions": [
-      "正式使用前請先小規模測試",
-      "若涉及學生資料或影像，需確認同意、隱私與校內規範",
-      "正式導入前請先確認工具內容與課程需求相符"
-    ],
-    "language": "JavaScript",
-    "install": "請依 GitHub README 的安裝與啟動說明操作，並先在測試環境確認權限、資料與瀏覽器相容性。",
-    "license": "MIT",
-    "submittedAt": "2026-07-09",
-    "sourcePath": "catalog/classroom-timer-tzk.yaml",
-    "stars": 1,
-    "forks": 0,
-    "lastPushedAt": "2026-07-11T10:45:13Z",
-    "repoUrl": "https://github.com/kisaraki/classroom-timer-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
   {
@@ -804,7 +930,7 @@
     "sourcePath": "catalog/classroom-lab-number-systems.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -841,7 +967,7 @@
     "license": "MIT",
     "submittedAt": "2026-07-10",
     "sourcePath": "catalog/meeting-time-survey-system.yaml",
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
     "lastPushedAt": "2026-07-12T01:21:30Z",
     "repoUrl": "https://github.com/educatres/meeting-time-survey-system",
@@ -923,9 +1049,9 @@
     "license": "Unspecified",
     "submittedAt": "2026-07-09",
     "sourcePath": "catalog/infinite-whiteboard.yaml",
-    "stars": 1,
+    "stars": 2,
     "forks": 1,
-    "lastPushedAt": "2026-07-10T12:18:06Z",
+    "lastPushedAt": "2026-07-13T22:33:09Z",
     "repoUrl": "https://github.com/educatres/infinite-whiteboard",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
@@ -1134,8 +1260,8 @@
     "license": "MIT",
     "submittedAt": "2026-07-11",
     "sourcePath": "catalog/speak-human-tw.yaml",
-    "stars": 356,
-    "forks": 48,
+    "stars": 496,
+    "forks": 59,
     "lastPushedAt": "2026-07-11T03:57:33Z",
     "repoUrl": "https://github.com/Raymondhou0917/speak-human-tw",
     "avatarUrl": "https://avatars.githubusercontent.com/u/14795468?v=4"
@@ -1256,7 +1382,7 @@
     "sourcePath": "catalog/classroom-lab-orbit-observatory.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
@@ -1298,7 +1424,7 @@
     "sourcePath": "catalog/classroom-lab-lens.yaml",
     "stars": 1,
     "forks": 0,
-    "lastPushedAt": "2026-07-12T14:17:27Z",
+    "lastPushedAt": "2026-07-14T08:41:17Z",
     "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   }

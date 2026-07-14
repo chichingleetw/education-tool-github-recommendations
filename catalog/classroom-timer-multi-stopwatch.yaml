@@ -1,0 +1,31 @@
+name: Classroom Timer 20 組碼表
+description: 可同時管理 20 組獨立碼表，適合分組活動、闖關任務與多站課堂計時。
+educatorSummary: |
+  Classroom Timer 的 20 組碼表模式讓教師在同一畫面管理多組獨立計時器，每組可點擊數字停止或繼續，也支援全部開始、全部停止與全部歸零。它適合多組學生同時進行任務但起訖時間不同的情境，例如分站實驗、分組討論、體育闖關、作品展示或學習中心輪替。七段顯示採低負載更新策略，降低大量碼表同時運作時的重繪負擔。
+authorName: kisaraki
+authorGitHub: kisaraki
+repo: kisaraki/classroom-timer-tzk
+homepage: 
+launchUrl: https://kisaraki.github.io/classroom-timer-tzk/?tool=multi-stopwatch
+tags:
+  - education
+  - teaching
+  - github
+  - classroom-management
+  - timer
+  - group-work
+educationLevels:
+  - 不限領域
+useCases:
+  - 管理多組學生不同步開始或結束的任務時間
+  - 在分站活動中記錄各組完成時間，方便活動後比較策略與效率
+  - 投影 20 組碼表，讓各組自行看見自己的進度並負責時間管理
+cautions:
+  - 此工具顯示多組時間，但不會儲存成績或匯出紀錄，正式評分需另行記錄
+  - 分組數少於 20 組時，建議事先指定使用哪些編號，避免學生看錯組別
+  - 若需要精密競賽判定，仍應搭配人工裁判或專用計時設備確認結果
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 的 20 組碼表連結。若要本機使用，可下載 classroom-timer-tzk 專案後直接開啟 index.html，或以靜態伺服器提供檔案；此模式可用 ?tool=multi-stopwatch 直接進入。
+license: MIT
+submittedAt: "2026-07-14"
