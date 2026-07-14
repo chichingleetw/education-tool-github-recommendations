@@ -1,0 +1,32 @@
+name: 紅血球心臟循環冒險
+description: 以紅血球在全身循環中的移動為主軸，示範心房、心室、瓣膜、血氧與血流變化的教學模擬器。
+educatorSummary: |
+  紅血球心臟循環冒險是一個可部署到 GitHub Pages 的循環系統教學模擬器。學生可以觀察紅血球沿人體循環路線移動，看到含氧量變化與顏色差異，並理解心臟舒張、心房收縮、心室收縮三階段中三尖瓣、肺動脈瓣、二尖瓣與主動脈瓣的開闔關係。工具也提供心率、血管阻力、高血壓、血管阻塞、瓣膜逆流、心房顫動、心室顫動與心律不整等模擬開關，適合用來把血壓、有效血流量、器官供氧與心臟負荷連成可觀察的系統概念。
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/red-blood-cell-heart-adventure
+homepage: 
+launchUrl: https://educatres.github.io/red-blood-cell-heart-adventure/
+tags:
+  - education
+  - teaching
+  - github
+  - science
+  - biology
+  - circulatory-system
+  - simulation
+educationLevels:
+  - 中小學
+useCases:
+  - 在自然科學或生物課中說明體循環、肺循環與紅血球含氧量變化
+  - 讓學生觀察心臟週期與四個主要瓣膜的開闔時機，理解血流單向性的原因
+  - 透過高血壓、血管阻塞、瓣膜逆流與心律異常模擬，討論循環系統失衡的影響
+cautions:
+  - 本工具是教學模擬，不可作為醫療診斷、臨床判斷或健康建議
+  - 缺氧血在人體中不是藍色，工具使用暗紅與鮮紅區分低氧與高氧血，教師應特別說明
+  - 疾病與異常狀態為簡化模型，正式課程中應補充真實生理機制與個體差異
+language: HTML
+install: |
+  可直接開啟 GitHub Pages 線上版本，也可以下載專案後直接用瀏覽器開啟 index.html。若要用本機伺服器測試，可在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
+license: Unspecified
+submittedAt: "2026-07-14"
