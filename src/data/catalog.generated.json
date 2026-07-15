@@ -940,6 +940,48 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
+    "name": "心臟模擬",
+    "description": "認識心房、心室、瓣膜、血氧、血壓與血管堵塞的心臟循環教學模擬器。",
+    "educatorSummary": "心臟模擬是一個可部署到 GitHub Pages 的循環系統教學模擬器。學生可以觀察紅血球沿人體循環路線移動，看到含氧量變化與顏色差異，並理解心臟舒張、心房收縮、心室收縮三階段中三尖瓣、肺動脈瓣、二尖瓣與主動脈瓣的開闔關係。工具也提供心率、血管阻力、高血壓、血管堵塞、瓣膜逆流、心房顫動、心室顫動與心律不整等模擬開關，適合用來把血壓、有效血流量、器官供氧與心臟負荷連成可觀察的系統概念。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/red-blood-cell-heart-adventure",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/red-blood-cell-heart-adventure/",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "biology",
+      "circulatory-system",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在自然科學或生物課中說明體循環、肺循環與紅血球含氧量變化",
+      "讓學生觀察心臟週期與四個主要瓣膜的開闔時機，理解血流單向性的原因",
+      "透過高血壓、血管堵塞、瓣膜逆流與心律異常模擬，討論循環系統失衡的影響"
+    ],
+    "cautions": [
+      "本工具是教學模擬，不可作為醫療診斷、臨床判斷或健康建議",
+      "缺氧血在人體中不是藍色，工具使用暗紅與鮮紅區分低氧與高氧血，教師應特別說明",
+      "疾病與異常狀態為簡化模型，正式課程中應補充真實生理機制與個體差異"
+    ],
+    "language": "HTML",
+    "install": "可直接開啟 GitHub Pages 線上版本，也可以下載專案後直接用瀏覽器開啟 index.html。若要用本機伺服器測試，可在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-14",
+    "sourcePath": "catalog/red-blood-cell-heart-adventure.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-14T23:21:35Z",
+    "repoUrl": "https://github.com/educatres/red-blood-cell-heart-adventure",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
     "name": "拋體運動實驗室",
     "description": "以互動式方格紙示範水平地表拋體運動，呈現初速分量、飛行時間、水平位移與最高點高度。",
     "educatorSummary": "拋體運動實驗室是 Classroom Lab tzk 中的物理模擬頁，可調整初速、發射角與發射點高度，並以固定水平地表 y = 0 展示拋物線軌跡。工具會把 V0 分解為 Vx 與 Vy，並在解算結果區逐卡呈現水平初速度、垂直初速度、飛行時間、最高點時間、水平位移與最高點垂直位移。它適合讓學生連結公式、向量分解與動畫軌跡，理解水平等速與垂直等加速度如何共同形成拋體運動。",
@@ -1223,48 +1265,6 @@
     "forks": 0,
     "lastPushedAt": "2026-07-11T16:51:24Z",
     "repoUrl": "https://github.com/educatres/chopstick-bridge-lab",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
-  },
-  {
-    "name": "紅血球心臟循環冒險",
-    "description": "以紅血球在全身循環中的移動為主軸，示範心房、心室、瓣膜、血氧與血流變化的教學模擬器。",
-    "educatorSummary": "紅血球心臟循環冒險是一個可部署到 GitHub Pages 的循環系統教學模擬器。學生可以觀察紅血球沿人體循環路線移動，看到含氧量變化與顏色差異，並理解心臟舒張、心房收縮、心室收縮三階段中三尖瓣、肺動脈瓣、二尖瓣與主動脈瓣的開闔關係。工具也提供心率、血管阻力、高血壓、血管阻塞、瓣膜逆流、心房顫動、心室顫動與心律不整等模擬開關，適合用來把血壓、有效血流量、器官供氧與心臟負荷連成可觀察的系統概念。",
-    "authorName": "educatres",
-    "authorGitHub": "educatres",
-    "repo": "educatres/red-blood-cell-heart-adventure",
-    "homepage": "",
-    "launchUrl": "https://educatres.github.io/red-blood-cell-heart-adventure/",
-    "tags": [
-      "education",
-      "teaching",
-      "github",
-      "science",
-      "biology",
-      "circulatory-system",
-      "simulation"
-    ],
-    "educationLevels": [
-      "中小學"
-    ],
-    "useCases": [
-      "在自然科學或生物課中說明體循環、肺循環與紅血球含氧量變化",
-      "讓學生觀察心臟週期與四個主要瓣膜的開闔時機，理解血流單向性的原因",
-      "透過高血壓、血管阻塞、瓣膜逆流與心律異常模擬，討論循環系統失衡的影響"
-    ],
-    "cautions": [
-      "本工具是教學模擬，不可作為醫療診斷、臨床判斷或健康建議",
-      "缺氧血在人體中不是藍色，工具使用暗紅與鮮紅區分低氧與高氧血，教師應特別說明",
-      "疾病與異常狀態為簡化模型，正式課程中應補充真實生理機制與個體差異"
-    ],
-    "language": "HTML",
-    "install": "可直接開啟 GitHub Pages 線上版本，也可以下載專案後直接用瀏覽器開啟 index.html。若要用本機伺服器測試，可在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
-    "license": "Unspecified",
-    "submittedAt": "2026-07-14",
-    "sourcePath": "catalog/red-blood-cell-heart-adventure.yaml",
-    "stars": 0,
-    "forks": 0,
-    "lastPushedAt": "2026-07-14T23:21:35Z",
-    "repoUrl": "https://github.com/educatres/red-blood-cell-heart-adventure",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {
