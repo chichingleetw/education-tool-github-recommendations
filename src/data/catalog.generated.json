@@ -367,6 +367,49 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/55537221?v=4"
   },
   {
+    "name": "Project Aorta：大動脈計畫室｜RBC RACER",
+    "description": "駕駛紅血球穿越體循環與肺循環的血液循環教育遊戲，結合血壓、氣體交換與血管危害。",
+    "educatorSummary": "Project Aorta：大動脈計畫室是 Classroom Lab tzk 的血液循環教育遊戲，副標為 RBC RACER。學生以第一人稱駕駛程序化紅血球，在四個關卡中依序通過腹部及下肢體循環、肺循環、頭部胸部及上肢體循環，以及高危險肺循環。遊戲 HUD 同步顯示血液循環圖、HP、血壓、位置、關卡、分數、距離、速度、姿態與異常狀態，並在體微血管或肺泡微血管加入氧氣與二氧化碳交換 QTE。它適合把體循環、肺循環、充氧血與減氧血、血壓控制、血管危害與氣體交換轉化成任務導向的探索活動。",
+    "authorName": "kisaraki",
+    "authorGitHub": "kisaraki",
+    "repo": "kisaraki/classroom-lab-tzk",
+    "homepage": "",
+    "launchUrl": "https://kisaraki.github.io/classroom-lab-tzk/rbcrr/rbcrr.html",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "science",
+      "biology",
+      "circulatory-system",
+      "game",
+      "simulation"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在自然科學或生物課中用遊戲任務說明體循環、肺循環與紅血球運輸路線",
+      "讓學生操作血壓、閃避血管危害並完成氣體交換，討論循環系統如何維持供氧",
+      "搭配 HUD 的循環圖、HP、BP 與異常狀態，引導學生連結遊戲事件與生理概念"
+    ],
+    "cautions": [
+      "此頁需要桌面瀏覽器、鍵盤、滑鼠、WebGL、ES Modules 與 Pointer Lock，手機和平板會顯示不支援提示",
+      "遊戲中的血壓、HP、速度與血管危害為教學遊戲模型，不應視為真實生理或醫療判斷",
+      "建議教師先示範鍵盤、滑鼠與氣體交換 QTE，再讓學生分組挑戰並回到循環圖進行概念整理"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 的大動脈計畫室頁面。若要本機使用，請下載 classroom-lab-tzk 專案後以靜態 HTTP 伺服器開啟；此工具不適合直接用 file:// 開啟。",
+    "license": "MIT",
+    "submittedAt": "2026-07-15",
+    "sourcePath": "catalog/classroom-lab-aorta-rbc-racer.yaml",
+    "stars": 1,
+    "forks": 0,
+    "lastPushedAt": "2026-07-15T15:18:42Z",
+    "repoUrl": "https://github.com/kisaraki/classroom-lab-tzk",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
+  },
+  {
     "name": "Prompt Lab",
     "description": "以提問能力為核心的 AI 素養學習工具，引導學生拆解問題、設定情境、比較回答並修正提示語。",
     "educatorSummary": "Prompt Lab 是一套以「提問能力」為核心的 AI 素養學習工具，專為課堂教學與學生自主探究而設計。它引導學生練習拆解問題、設定情境、補充條件、比較答案並逐步修正提示語，讓學生從單純把問題交給 AI，進一步學會引導 AI 協助思考。教師可將它用於 AI 素養課程、跨領域探究、寫作訓練、專題研究或邏輯思辨活動，帶學生討論問題是否明確、條件是否足夠，以及 AI 回答是否合理。",
