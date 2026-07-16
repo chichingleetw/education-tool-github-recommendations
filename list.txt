@@ -40,3 +40,4 @@ https://github.com/educatres/food-digestion-simulator	中小學、高中	https:/
 https://github.com/educatres/circulation-learning-game	中小學	https://educatres.github.io/circulation-learning-game/
 https://github.com/kisaraki/classroom-lab-tzk	中小學	https://kisaraki.github.io/classroom-lab-tzk/rbcrr/rbcrr.html
 https://github.com/educatres/talkq	教室工具	https://educatres.github.io/talkq/
+https://github.com/educatres/irregular-density	中小學	https://educatres.github.io/irregular-density/
