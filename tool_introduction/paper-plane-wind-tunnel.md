@@ -16,7 +16,6 @@ tags:
   - game-based-learning
 educationLevels:
   - 中小學
-  - 高中
 language: HTML
 license: Unspecified
 submittedAt: "2026-07-11"

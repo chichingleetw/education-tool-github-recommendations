@@ -13,7 +13,7 @@ tags:
   - timer
   - group-work
 educationLevels:
-  - 不限領域
+  - 教室工具
 language: JavaScript
 license: MIT
 submittedAt: "2026-07-14"

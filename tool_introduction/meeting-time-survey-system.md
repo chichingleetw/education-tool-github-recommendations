@@ -11,7 +11,7 @@ tags:
   - github
   - scheduling
 educationLevels:
-  - 其他
+  - 通用工具
 language: JavaScript
 license: MIT
 submittedAt: "2026-07-10"

@@ -10,7 +10,7 @@ tags:
   - teaching
   - github
 educationLevels:
-  - 不限領域
+  - 通用工具
 language: Unknown
 license: MIT
 submittedAt: "2026-07-08"

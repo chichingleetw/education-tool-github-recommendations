@@ -10,7 +10,7 @@ tags:
   - teaching
   - github
 educationLevels:
-  - 不限領域
+  - 教室工具
 language: HTML
 license: Unspecified
 submittedAt: "2026-07-09"

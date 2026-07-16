@@ -96,7 +96,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "課前評估工具功能是否符合課程需求",
@@ -137,7 +137,7 @@
       "group-work"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "管理多組學生不同步開始或結束的任務時間",
@@ -178,7 +178,7 @@
       "countdown"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "為討論、閱讀、測驗、實作或休息設定明確倒數時間",
@@ -219,7 +219,7 @@
       "clock"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "在課堂、考試、分站活動或工作坊中投影目前時間，協助學生掌握節奏",
@@ -260,7 +260,7 @@
       "stopwatch"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "計時學生報告、實作挑戰、討論任務或搶答活動的單一時段",
@@ -424,7 +424,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "通用工具"
     ],
     "useCases": [
       "AI 素養課程中練習提示語設計、追問與修正",
@@ -591,7 +591,7 @@
       "google-sheets"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "在講座、課堂或研習中產生 QR Code，讓聽眾用手機即時提交問題",
@@ -633,7 +633,7 @@
       "accessibility"
     ],
     "educationLevels": [
-      "不限領域"
+      "通用工具"
     ],
     "useCases": [
       "教師用語音快速撰寫課後回饋、教案筆記或學習單初稿",
@@ -713,7 +713,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "課前評估工具功能是否符合課程需求",
@@ -839,7 +839,7 @@
       "randomizer"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "課堂提問、報告順序或活動代表需要公平抽籤時快速產生名單",
@@ -1204,7 +1204,7 @@
       "scheduling"
     ],
     "educationLevels": [
-      "其他"
+      "通用工具"
     ],
     "useCases": [
       "協調班級活動、補課、師生討論或專題小組會議的共同可用時段",
@@ -1285,7 +1285,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "可直接開啟本網站使用，無須註冊帳號或安裝額外軟體。",
@@ -1372,8 +1372,7 @@
       "game-based-learning"
     ],
     "educationLevels": [
-      "中小學",
-      "高中"
+      "中小學"
     ],
     "useCases": [
       "在自然科學、物理或 STEM 課程中引入升力、阻力、攻角、失速與相對風概念",
@@ -1411,7 +1410,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "課堂提問後快速估計整體舉手回應比例",
@@ -1535,9 +1534,7 @@
       "github"
     ],
     "educationLevels": [
-      "中小學",
-      "高中",
-      "大學"
+      "教室工具"
     ],
     "useCases": [
       "課堂暖身、概念檢核或單選題即時練習",
@@ -1575,7 +1572,7 @@
       "github"
     ],
     "educationLevels": [
-      "不限領域"
+      "教室工具"
     ],
     "useCases": [
       "大型課堂或講座中快速掌握整體注意力變化",

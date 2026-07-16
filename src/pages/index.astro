@@ -20,7 +20,7 @@ function compactIntro(value: string) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="為教育工作者整理的 GitHub 教育工具推薦網站，讀取 list.txt 的開源專案並整理適用教育階段、教學用途與注意事項。"
+      content="為教育工作者整理的 GitHub 教育工具推薦網站，讀取 list.txt 的開源專案並整理工具類別、適用階段、教學用途與注意事項。"
     />
     <title>教育工具 GitHub 推薦</title>
   </head>
@@ -55,8 +55,8 @@ function compactIntro(value: string) {
               ，和我們一起補充、完善這份教育工具清單，讓更多老師與學生都能受益。
             </p>
           </div>
-          <nav class="levelQuickSelect" aria-label="依教育階段快速篩選">
-            <span>教育階段</span>
+          <nav class="levelQuickSelect" aria-label="依類別或教育階段快速篩選">
+            <span>類別／階段</span>
             <div>
               <button type="button" data-level-filter="" aria-pressed="true">全部</button>
               {educationLevels.map((level) => (
@@ -72,7 +72,7 @@ function compactIntro(value: string) {
           </div>
           <div>
             <strong>{educationLevels.length}</strong>
-            <span>教育階段</span>
+            <span>類別／階段</span>
           </div>
         </div>
       </header>
@@ -80,10 +80,10 @@ function compactIntro(value: string) {
       <section class="toolbar" aria-label="推薦清單控制項">
         <label class="search">
           <span>搜尋</span>
-          <input id="search" type="search" placeholder="工具、用途、階段" autocomplete="off" />
+          <input id="search" type="search" placeholder="工具、用途、類別" autocomplete="off" />
         </label>
         <label>
-          <span>教育階段</span>
+          <span>類別／階段</span>
           <select id="level">
             <option value="">全部</option>
             {educationLevels.map((level) => <option value={level}>{level}</option>)}
@@ -209,7 +209,7 @@ function compactIntro(value: string) {
         }
         <div class="noResults" id="noResults" hidden>
           <h2>沒有符合條件的工具</h2>
-          <p>試著改用較短的關鍵字，或切回全部教育階段。</p>
+          <p>試著改用較短的關鍵字，或切回全部類別／階段。</p>
         </div>
       </section>
 

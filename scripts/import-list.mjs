@@ -6,7 +6,7 @@ import { normalizeEntry, parseCatalogYaml, stringifyCatalogYaml } from "./catalo
 const listPath = path.resolve("list.txt");
 const catalogDir = path.resolve("catalog");
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
-const allowedEducationLevels = ["不限領域", "中小學", "高中", "大學", "研究"];
+const allowedEducationLevels = ["教室工具", "通用工具", "不限領域", "中小學", "高中", "大學", "研究"];
 
 function githubHeaders() {
   const headers = {

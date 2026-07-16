@@ -14,7 +14,7 @@ tags:
   - desktop-app
   - accessibility
 educationLevels:
-  - 不限領域
+  - 通用工具
 language: Rust
 license: MIT
 submittedAt: "2026-07-11"
