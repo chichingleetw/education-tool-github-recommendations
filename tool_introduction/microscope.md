@@ -1,0 +1,48 @@
+---
+name: 3D 複式顯微鏡互動實驗室
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/microscope
+homepage:
+launchUrl: https://educatres.github.io/microscope/
+tags:
+  - education
+  - teaching
+  - github
+  - science
+  - biology
+  - microscope
+  - simulation
+  - 3d
+educationLevels:
+  - 中小學
+language: CSS
+license: Unspecified
+submittedAt: "2026-07-18"
+---
+
+# 3D 複式顯微鏡互動實驗室
+
+## 簡短描述
+
+國中生物互動教材，讓學生旋轉觀察 3D 複式顯微鏡，操作倍率、光線、對焦與玻片移動。
+
+## 教育工作者摘要
+
+3D 複式顯微鏡互動實驗室是一套可部署到 GitHub Pages 的純前端生物教材，主題聚焦在複式顯微鏡的構造辨認與正確操作流程。學生可在 Three.js 3D 場景中旋轉、縮放並點擊顯微鏡部件，也能切換草履蟲、眼蟲、渦蟲與藻類玻片，調整目鏡與物鏡倍率、粗調與細調節輪、光圈、反光鏡角度及載玻片位置。教材會在圓形目鏡視野中模擬倍率縮放、亮度、模糊、倒像與載玻片移動造成的反向視野變化，並提供六階段操作任務、部件列表、原理說明與即時回饋，適合用來在實體顯微鏡操作前建立安全流程與觀察概念。
+
+## 教學用途
+
+- 在國中自然科或生物課中，讓學生先熟悉目鏡、物鏡、載物臺、調節輪、光圈與反光鏡等部件功能
+- 透過低倍找標本、調整光線、粗調找到影像、細調清晰、高倍只用細調等任務，練習顯微鏡標準操作順序
+- 使用倒像、倍率與視野反向移動模擬，幫助學生理解為何玻片移動方向和目鏡中影像方向相反
+
+## 導入注意
+
+- 目前 Three.js 與顯微影像從 CDN 或 Wikimedia Commons 載入，課堂使用時需確認網路連線與外部資源可正常讀取
+- 3D 操作與影像視野是教學模擬，仍建議搭配實體顯微鏡，讓學生比較虛擬操作與真實對焦、光線調整的差異
+- 若需要完全離線使用，需先下載函式庫與影像並修改 index.html 與 js/app.js 的資源路徑
+
+## 啟動或安裝方式
+
+可直接開啟 GitHub Pages 線上版本使用。若要本機測試，因專案使用 ES Modules，請在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
