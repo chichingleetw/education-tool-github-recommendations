@@ -1,0 +1,33 @@
+name: 電阻研究所｜歐姆式導體互動教材
+description: 國中理化電學互動教材，讓學生操作電壓、導線長度、直徑、截面積與材料，探索歐姆定律與導線電阻。
+educatorSummary: |
+  電阻研究所是一套可部署到 GitHub Pages 的純前端互動教材，主題聚焦在歐姆式導體、V-I 圖、導線電阻與長度及截面積的關係。學生可在六個任務中拖動電壓、長度、直徑、截面積與材料控制器，即時觀察電流、電阻與自製 Canvas 圖表的變化，並用資料表與 CSV 匯出保存實驗結果。教材以 `R = ρL/A` 與 `I = V/R` 的簡化模型呈現正比、反比與控制變因概念，也包含工程設計任務、實驗誤差討論、科學家故事、教師專區與可列印學習單，適合用來把國中電學中的公式、圖表判讀與實驗設計串成可操作的探究活動。
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/ohms-law
+homepage:
+launchUrl: https://educatres.github.io/ohms-law/
+tags:
+  - education
+  - teaching
+  - github
+  - science
+  - physics
+  - electricity
+  - ohms-law
+  - simulation
+educationLevels:
+  - 中小學
+useCases:
+  - 在國中自然科或理化電學單元中，讓學生量測不同電壓下的電流並觀察歐姆式導體的 V-I 直線關係
+  - 透過固定材料與截面積後改變導線長度，或固定材料與長度後改變截面積，引導學生理解控制變因與電阻變化
+  - 使用工程設計任務、CSV 匯出與科學史閱讀，延伸到資料解讀、成本取捨、實驗誤差與科學發展脈絡
+cautions:
+  - 教材中的材料電阻率採教學比例值，重點是趨勢觀察與比例推理，不應作為真實工程規格或精密計算
+  - 學生容易混淆「電壓增加使電流增加」與「電阻本身增加」，建議要求學生明確寫出控制變因與被操縱變因
+  - 若用於正式評量，建議搭配實體電路或課本實驗，讓學生比較模擬模型、真實測量與誤差來源
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 線上版本使用。若要本機測試，可下載或 clone 專案後直接用瀏覽器開啟 index.html；也可以在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
+license: MIT
+submittedAt: "2026-07-17"
