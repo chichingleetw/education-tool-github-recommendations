@@ -1,0 +1,33 @@
+name: 血球迷宮：循環運輸大挑戰
+description: 國中生物循環系統互動迷宮教材，讓學生化身紅血球完成氣體、養分與代謝廢物運輸任務。
+educatorSummary: |
+  血球迷宮：循環運輸大挑戰是一套可直接部署到 GitHub Pages 的純前端循環系統遊戲。學生化身紅血球，在人體迷宮中依任務判斷正確路線，完成肺部氣體交換、小腸養分吸收、肝臟處理、腎臟過濾、腦部供應與肌肉供能等五個循序關卡。遊戲提供方向鍵、WASD 與畫面按鈕操作，並在迷宮中放入心臟、肺、小腸、肝臟、腎臟、腦與肌肉等器官，以及二氧化碳、葡萄糖、胺基酸、有害物質、病原體、血液寄生蟲、瘧原蟲與血管斑塊等移動障礙。學生必須依序抵達正確器官、避開干擾物，並透過隨身知識卡、任務手冊、即時回饋、分數、生命值與學習紀錄，建立「血液運輸物質」與「器官功能配合循環路徑」的整體概念。
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/circulation-maze
+homepage: https://educatres.github.io/circulation-maze/
+launchUrl: https://educatres.github.io/circulation-maze/
+tags:
+  - education
+  - teaching
+  - github
+  - science
+  - biology
+  - circulation
+  - game-based-learning
+  - maze
+educationLevels:
+  - 中小學
+useCases:
+  - 在國中生物或自然科中複習心臟、肺、小腸、肝臟、腎臟、腦與肌肉在循環運輸中的角色
+  - 讓學生依任務判斷氧氣、二氧化碳、葡萄糖、胺基酸、尿素、水與鹽類的運送或排除路徑
+  - 透過迷宮路線選擇、移動障礙與知識卡，引導學生口頭說明為什麼某個器官應該先到或後到
+cautions:
+  - 遊戲中的路線與關卡是教學用簡化模型，教師應補充真實循環系統中肺循環、體循環與微血管交換的完整關係
+  - 部分病原體、瘧原蟲與血管斑塊以障礙物方式呈現，適合做概念引入，不宜直接當成生理機制的精確模擬
+  - 若作為課堂評量，建議要求學生另行畫出路徑圖並標示運輸物質，避免只看遊戲分數判斷理解程度
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 線上版本使用。若要本機測試，可下載或 clone 專案後直接開啟 index.html；也可以在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
+license: Educational non-commercial
+submittedAt: "2026-07-18"
