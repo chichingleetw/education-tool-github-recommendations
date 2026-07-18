@@ -48,3 +48,7 @@ https://github.com/educatres/circulation-maze	中小學	https://educatres.github
 https://github.com/educatres/gut-microbiome-battle	中小學、高中	https://educatres.github.io/gut-microbiome-battle/
 https://github.com/Sonville/suzanne-paper-plane-lab	中小學、高中	https://sonville.github.io/suzanne-paper-plane-lab/
 https://github.com/educatres/terrain-explorer-americas	中小學、高中	https://educatres.github.io/terrain-explorer-americas/
+https://github.com/educatres/terrain-explorer-australia	中小學、高中	https://educatres.github.io/terrain-explorer-australia/
+https://github.com/educatres/terrain-explorer-asia	中小學、高中	https://educatres.github.io/terrain-explorer-asia/
+https://github.com/educatres/terrain-explorer-europe	中小學、高中	https://educatres.github.io/terrain-explorer-europe/
+

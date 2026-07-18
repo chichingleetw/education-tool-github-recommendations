@@ -1,0 +1,49 @@
+---
+name: 地形探險隊-澳洲
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/terrain-explorer-australia
+homepage: https://educatres.github.io/terrain-explorer-australia/
+launchUrl: https://educatres.github.io/terrain-explorer-australia/
+tags:
+  - education
+  - teaching
+  - github
+  - geography
+  - earth-science
+  - ecology
+  - interactive-map
+  - leaflet
+educationLevels:
+  - 中小學
+  - 高中
+language: JavaScript
+license: NOASSERTION
+submittedAt: "2026-07-19"
+---
+
+# 地形探險隊-澳洲
+
+## 簡短描述
+
+澳洲互動式地理教材，可在衛星底圖上探索澳洲地形、國家公園、代表性動植物與公開授權照片來源。
+
+## 教育工作者摘要
+
+地形探險隊-澳洲是一套可部署到 GitHub Pages 的互動式地理教材。學生可在以澳洲與近海為主要視野的 Esri World Imagery 衛星底圖上縮放、拖曳與點選標註，探索山脈、河流、湖泊、特殊地形、國家公園、特有動物與特色植物。教材使用 Leaflet 地圖與澳洲山脈、河流、鹽湖的 GeoJSON 教學概略圖層，收錄澳洲代表地形、國家公園及代表性動植物，並提供景點搜尋、澳洲導覽、觀察任務與隨機測驗。右側資訊卡會呈現地理成因、生態特徵、官方或主要來源、Google Maps 探索、YouTube 公開影片搜尋，以及 Wikimedia Commons CC 授權照片的作者、授權與原始頁面連結。它適合用於地理、自然科學與環境教育課程，帶學生觀察大分水嶺、內陸乾燥區、鹽湖、海岸地形與澳洲特有生物之間的關係。
+
+## 教學用途
+
+- 在地理或自然科課程中帶學生辨識澳洲主要山脈、河流、鹽湖、特殊地形與國家公園的位置關係
+- 讓學生比較澳洲東部山地、內陸乾燥區、海岸地形與代表性動植物棲地的分布
+- 搭配觀察任務、導覽模式與隨機測驗，引導學生從衛星影像、地圖標註、照片與資料來源提出地理觀察
+
+## 導入注意
+
+- GeoJSON 圖層與物種標記是課堂辨識用概略資料，不可用於導航、工程、土地界線、物種調查、災害判定或科學研究
+- 衛星底圖、Wikimedia Commons 照片、官方資料與影片搜尋各有來源與授權條件，公開展示或改作前應逐項確認
+- 使用無道路與國界的衛星底圖時，學生可能需要額外地圖或教師提示來連結澳洲州界、城市與區域名稱
+
+## 啟動或安裝方式
+
+可直接開啟 GitHub Pages 線上版本使用。若要本機測試，因網站會透過 fetch() 載入 JSON 與 GeoJSON 資料，請在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
