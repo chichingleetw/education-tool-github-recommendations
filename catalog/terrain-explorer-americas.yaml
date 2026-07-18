@@ -1,0 +1,34 @@
+name: 地形探險隊-美洲
+description: 美洲互動式地理教材，可在衛星底圖上探索地形、國家公園、代表性動植物與公開授權照片來源。
+educatorSummary: |
+  地形探險隊-美洲是一套可部署到 GitHub Pages 的互動式地理教材。學生可在無道路與國界標示的 Esri World Imagery 衛星底圖上縮放、拖曳與點選標註，探索北美洲、中美洲、加勒比海與南美洲的山脈、河流、湖泊、特殊地形、國家公園、特有動物與特色植物。教材使用 Leaflet 地圖與 GeoJSON 概略圖層，提供景點搜尋、分類圖層切換、導覽模式、觀察任務與隨機測驗；每個項目可查看地理成因、生態特徵、物種學名、棲地、保育現況、Wikimedia Commons CC 授權照片、官方或主要來源、Google Maps 探索與 YouTube 公開影片搜尋連結。它適合用於地理、自然科學或跨領域環境教育課程，讓學生把美洲地形分布、生態棲地與代表物種放在同一張地圖中比較。
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/terrain-explorer-americas
+homepage: https://educatres.github.io/terrain-explorer-americas/
+launchUrl: https://educatres.github.io/terrain-explorer-americas/
+tags:
+  - education
+  - teaching
+  - github
+  - geography
+  - earth-science
+  - ecology
+  - interactive-map
+  - leaflet
+educationLevels:
+  - 中小學
+  - 高中
+useCases:
+  - 在地理或自然科課程中帶學生辨識美洲主要山脈、河流、湖泊、特殊地形與國家公園的位置關係
+  - 讓學生切換地形與生態圖層，比較北美、中美、加勒比海與南美洲不同環境中的代表物種與棲地
+  - 搭配觀察任務、導覽模式與隨機測驗，引導學生練習從衛星影像、照片、地圖標註與資料來源提出地理觀察
+cautions:
+  - 山脈、河流、湖區與物種圖標位置是教學用概略資料，不可用於導航、工程、土地界線、災害判定或科學研究
+  - 衛星底圖、Wikimedia Commons 照片、官方資料與影片搜尋各有來源與授權條件，若要公開展示或改作應逐項確認
+  - 使用無道路與國界的衛星底圖時，學生可能需要額外地圖或教師提示來連結地形、國家位置與區域名稱
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 線上版本使用。若要本機測試，因網站會透過 fetch() 載入 JSON 與 GeoJSON 資料，請在專案資料夾執行 python3 -m http.server 8000，再開啟 http://localhost:8000。
+license: NOASSERTION
+submittedAt: "2026-07-18"
