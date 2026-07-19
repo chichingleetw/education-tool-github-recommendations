@@ -1,0 +1,47 @@
+---
+name: 益生菌生存戰爭 · Survival War of Probiotics
+authorName: jong-liu
+authorGitHub: jong-liu
+repo: jong-liu/survival-war-of-probiotics
+homepage:
+launchUrl: https://jong-liu.github.io/survival-war-of-probiotics/
+tags:
+  - education
+  - teaching
+  - github
+  - science
+  - biology
+  - microbiome
+  - game-based-learning
+educationLevels:
+  - 中小學
+language: HTML
+license: Unspecified
+submittedAt: "2026-07-19"
+---
+
+# 益生菌生存戰爭 · Survival War of Probiotics
+
+## 簡短描述
+
+腸道菌叢教育策略小遊戲，讓學生透過命運卡、機會卡與酸性優勢分理解好菌、壞菌與動態平衡。
+
+## 教育工作者摘要
+
+益生菌生存戰爭是一款可直接部署到 GitHub Pages 的純前端單頁教育遊戲，主題聚焦在腸道菌叢生態與益生菌保健觀念。學生扮演腸道城市中的益生菌指揮官，透過吃優格、發酵食物、高纖蔬果、多喝水、減糖、規律運動、清淡飲食與放鬆冥想等機會卡累積好菌優勢；每回合再共同面對鹹酥雞宵夜、精緻糖手搖、考試壓力、熬夜、暴飲暴食、抗生素療程與流感等命運卡考驗。遊戲以「好菌減壞菌」作為酸性優勢與回合得分，強調壞菌並非完全清除，而是維持共生與動態平衡。它支援 1 到 4 位玩家同桌輪流出牌，不足座位由 AI 補齊，並提供 AI 難度、新手教學、悔牌、音效、pH 條、菌叢動畫與事件連鎖，適合國小高年級自然、健康教育或生物概念入門活動。
+
+## 教學用途
+
+- 在國小高年級自然、健康教育或生物入門課程中介紹腸道菌叢、益生菌、膳食纖維與生活習慣的關係
+- 透過命運卡與機會卡讓學生討論熬夜、壓力、飲食、運動、抗生素與感染事件如何影響菌叢平衡
+- 使用同桌熱座與 AI 補位進行小組策略活動，引導學生解釋為何維持好菌優勢比追求消滅所有壞菌更合理
+
+## 導入注意
+
+- 遊戲中的好菌、壞菌、酸性優勢與事件懲罰是教學簡化模型，不可作為醫療診斷、治療或營養建議
+- 「好菌／壞菌」是入門語彙，教師應補充菌種作用會受到菌株、數量、位置、宿主與環境條件影響
+- 抗生素療程在遊戲中作為菌相變化事件，課堂中應強調抗生素需依醫療專業指示使用，不應自行停藥或污名化
+
+## 啟動或安裝方式
+
+可直接開啟 GitHub Pages 線上版本使用。若要本機測試，下載或 clone 專案後可直接用瀏覽器開啟 index.html；專案是單一 HTML 檔、純前端、無需建置、無需後端，也可用 python3 -m http.server 8000 啟動靜態伺服器後開啟 http://localhost:8000。
