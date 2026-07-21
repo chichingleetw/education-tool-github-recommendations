@@ -869,6 +869,48 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/48860861?v=4"
   },
   {
+    "name": "世界同一刻-1945",
+    "description": "1915 到 1975 年三洲同步互動歷史時間軸，協助學生比較亞洲、歐洲與美洲的戰爭、政治與政經轉折。",
+    "educatorSummary": "世界同一刻-1945 是一套可部署到 GitHub Pages 的純前端互動歷史教材，以 1915 到 1975 年為範圍，讓學生在同一螢幕中同步比較亞洲、歐洲與美洲的重要事件、政治領導人、重要人物與政經議題。教材提供三條水平分色時間軸、年份滑桿、拖曳與鍵盤操作、分類篩選、右側常駐事件詳述，以及每年自動產生的三洲年度快照與課堂提問。點選事件卡後，學生可閱讀事件摘要、人物與政經脈絡、影響重點、文字資料來源、Wikimedia Commons 公開圖像與 YouTube 說明影片。它適合用於國中歷史或社會課，幫助學生把二戰前後、冷戰初期、去殖民化與區域政經變動放在「同一年不同地區」的比較架構中理解。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/timeline-wwii",
+    "homepage": "https://educatres.github.io/timeline-wwii/",
+    "launchUrl": "https://educatres.github.io/timeline-wwii/",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "history",
+      "world-history",
+      "timeline",
+      "media-literacy"
+    ],
+    "educationLevels": [
+      "中小學"
+    ],
+    "useCases": [
+      "在國中歷史或社會課中比較 1915 到 1975 年亞洲、歐洲與美洲同一年份的戰爭、政治與政經事件",
+      "透過年度快照與課堂提問，引導學生討論二戰結束、冷戰形成、去殖民化與區域秩序重組之間的關係",
+      "使用圖像、影片、事件詳述與來源連結，練習區分史實、解釋、觀點與評價"
+    ],
+    "cautions": [
+      "本教材以跨區同步比較為核心，單一事件不宜被解釋成只有一個原因，建議搭配原始史料與課本脈絡討論",
+      "Wikimedia Commons 圖像與 YouTube 影片來自外部來源，正式授課前應確認連結可用、內容適齡且授權標示清楚",
+      "時間軸摘要會壓縮事件複雜性，若用於評量，建議要求學生引用事件卡資料並說明因果關係"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 線上版本使用。若要本機測試，下載或 clone 專案後可直接用瀏覽器開啟 index.html；專案為純 HTML、CSS、JavaScript，無需帳號、資料庫或建置工具，也可用 python3 -m http.server 8000 啟動靜態伺服器後開啟 http://localhost:8000。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-21",
+    "sourcePath": "catalog/timeline-wwii.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-21T13:48:35Z",
+    "repoUrl": "https://github.com/educatres/timeline-wwii",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
     "name": "參考資料檢查器 Reference Verifier",
     "description": "用於查核參考文獻真實性的 AI 協作 Skill，協助比對標題、作者、年份、期刊與 DOI 是否可信。",
     "educatorSummary": "Reference Verifier 是一個 Codex / AI 協作 Skill，設計給研究者、研究生與教師用來檢查參考文獻清單是否混入 AI 幻覺文獻或書目欄位錯誤。使用者貼上參考文獻後，工具會先逐筆編號，再依選定資料庫比對標題、作者、年份、期刊與 DOI，並以「真實存在」、「資訊不完整 / 有出入」、「疑似不存在」整理結果。它適合研究方法、論文寫作、專題報告與文獻回顧課程，用來訓練學生誠實標示查核限制，而不是補造看似合理的引用資訊。",
@@ -1830,6 +1872,49 @@
     "forks": 0,
     "lastPushedAt": "2026-07-17T15:33:25Z",
     "repoUrl": "https://github.com/educatres/cell-division",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
+  },
+  {
+    "name": "經濟轉折｜1900–現在",
+    "description": "1900 到 2026 年全球與台灣經濟史互動時間軸，對照危機、制度、企業、科技、能源與人物。",
+    "educatorSummary": "經濟轉折｜1900–現在是一套可部署到 GitHub Pages 的純前端互動經濟史教材，時間範圍涵蓋 1900 到 2026 年，並以亞洲、歐洲、美洲與台灣四條水平時間軌展示 71 則經濟史事件。學生可透過年份滑桿、拖曳、觸控板與方向鍵操作，勾選危機與衝擊、制度與政策、產業與科技、企業與市場、人物與思想、能源與環境等分類，觀察大蕭條、布雷頓森林體系、石油危機、亞洲金融風暴、金融海嘯、疫情、AI 革命、半導體、台灣十大建設、高鐵、碳費與代表企業等轉折。每張事件卡提供事件經過、因果與制度分析、關鍵人物、學術判讀、經濟名詞定義、官方或國際組織來源、YouTube 解說影片與 Wikimedia Commons 圖像，適合高中公民、歷史、地理與大學通識或經濟史課程。",
+    "authorName": "educatres",
+    "authorGitHub": "educatres",
+    "repo": "educatres/Timeline-20th-Century-Economy",
+    "homepage": "",
+    "launchUrl": "https://educatres.github.io/Timeline-20th-Century-Economy/",
+    "tags": [
+      "education",
+      "teaching",
+      "github",
+      "economics",
+      "history",
+      "taiwan",
+      "timeline"
+    ],
+    "educationLevels": [
+      "高中",
+      "大學"
+    ],
+    "useCases": [
+      "在高中公民、歷史、地理或大學通識課中比較全球與台灣經濟制度、產業、能源與企業發展的長期變化",
+      "讓學生依年份、區域與分類追蹤大蕭條、石油危機、金融風暴、疫情與 AI 革命等事件的因果脈絡",
+      "使用經濟名詞、學術判讀、資料來源、圖像與影片，引導學生練習制度分析與跨區域經濟史比較"
+    ],
+    "cautions": [
+      "時間軸是教學型摘要，不宜把單一經濟事件視為只有一個原因，建議引導學生比較官方資料、統計與不同觀點",
+      "影片、圖像與外部來源可能更新、下架或禁止嵌入，正式授課前建議抽查連結與授權標示",
+      "大學程度名詞對高中生可能偏難，教師可先挑選少量事件與關鍵詞，再逐步增加制度與因果分析深度"
+    ],
+    "language": "JavaScript",
+    "install": "可直接開啟 GitHub Pages 線上版本使用。若要本機測試，下載或 clone 專案後可直接用瀏覽器開啟 index.html；專案為純 HTML、CSS、JavaScript，不需安裝套件。也可在專案目錄執行 python3 -m http.server 8000，再開啟 http://localhost:8000。",
+    "license": "Unspecified",
+    "submittedAt": "2026-07-21",
+    "sourcePath": "catalog/timeline-20th-century-economy.yaml",
+    "stars": 0,
+    "forks": 0,
+    "lastPushedAt": "2026-07-21T13:39:44Z",
+    "repoUrl": "https://github.com/educatres/Timeline-20th-Century-Economy",
     "avatarUrl": "https://avatars.githubusercontent.com/u/80018723?v=4"
   },
   {

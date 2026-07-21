@@ -1,0 +1,32 @@
+name: 世界同一刻-1945
+description: 1915 到 1975 年三洲同步互動歷史時間軸，協助學生比較亞洲、歐洲與美洲的戰爭、政治與政經轉折。
+educatorSummary: |
+  世界同一刻-1945 是一套可部署到 GitHub Pages 的純前端互動歷史教材，以 1915 到 1975 年為範圍，讓學生在同一螢幕中同步比較亞洲、歐洲與美洲的重要事件、政治領導人、重要人物與政經議題。教材提供三條水平分色時間軸、年份滑桿、拖曳與鍵盤操作、分類篩選、右側常駐事件詳述，以及每年自動產生的三洲年度快照與課堂提問。點選事件卡後，學生可閱讀事件摘要、人物與政經脈絡、影響重點、文字資料來源、Wikimedia Commons 公開圖像與 YouTube 說明影片。它適合用於國中歷史或社會課，幫助學生把二戰前後、冷戰初期、去殖民化與區域政經變動放在「同一年不同地區」的比較架構中理解。
+authorName: educatres
+authorGitHub: educatres
+repo: educatres/timeline-wwii
+homepage: https://educatres.github.io/timeline-wwii/
+launchUrl: https://educatres.github.io/timeline-wwii/
+tags:
+  - education
+  - teaching
+  - github
+  - history
+  - world-history
+  - timeline
+  - media-literacy
+educationLevels:
+  - 中小學
+useCases:
+  - 在國中歷史或社會課中比較 1915 到 1975 年亞洲、歐洲與美洲同一年份的戰爭、政治與政經事件
+  - 透過年度快照與課堂提問，引導學生討論二戰結束、冷戰形成、去殖民化與區域秩序重組之間的關係
+  - 使用圖像、影片、事件詳述與來源連結，練習區分史實、解釋、觀點與評價
+cautions:
+  - 本教材以跨區同步比較為核心，單一事件不宜被解釋成只有一個原因，建議搭配原始史料與課本脈絡討論
+  - Wikimedia Commons 圖像與 YouTube 影片來自外部來源，正式授課前應確認連結可用、內容適齡且授權標示清楚
+  - 時間軸摘要會壓縮事件複雜性，若用於評量，建議要求學生引用事件卡資料並說明因果關係
+language: JavaScript
+install: |
+  可直接開啟 GitHub Pages 線上版本使用。若要本機測試，下載或 clone 專案後可直接用瀏覽器開啟 index.html；專案為純 HTML、CSS、JavaScript，無需帳號、資料庫或建置工具，也可用 python3 -m http.server 8000 啟動靜態伺服器後開啟 http://localhost:8000。
+license: Unspecified
+submittedAt: "2026-07-21"
